@@ -1,42 +1,37 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+import { graphql } from "gatsby"
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+const Header = () => {
+	const data = props.data.allFile.nodes[0].childMarkdownRemark.frontmatter;
+
+	return (
+		<header className="mod_header">
+			<div className="header__image">IMAGE</div>
+			<div className="header__title">
+				<h1>{data.headertitle}</h1>
+			</div>
+			<div className="header__quote">
+				<h3>{data.headerquote}</h3>
+			</div>
+		</header>
+	)
 }
 
-Header.defaultProps = {
-  siteTitle: '',
-}
 
 export default Header
+
+export const query = graphql`
+    query {
+        allFile(filter: {sourceInstanceName: {eq: "content"} name: {eq: "home"}}) {
+            nodes {
+                childMarkdownRemark {
+                    frontmatter {
+                        headerimage
+                        headertitle
+                        headerquote
+                    }
+                }
+            }
+        }
+    }`
