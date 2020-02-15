@@ -2,7 +2,7 @@ import React from "react"
 
 import { graphql } from "gatsby"
 
-const Header = () => {
+const Header = (props) => {
 	const data = props.data.allFile.nodes[0].childMarkdownRemark.frontmatter;
 
 	return (
