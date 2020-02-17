@@ -15,6 +15,11 @@ collections:
         name: "home"
         file: "content/home.md"
         fields:
-          - {label: Kopfzeile Bild, name: headerimage, widget: image}
+          - {label: Kopfbild Desktop, name: headerimage_l, widget: image}
+          - {label: Kopfbild Smartphone, name: headerimage_s, widget: image}
           - {label: Kopfzeile Titel, name: headertitle, widget: string}
           - {label: Kopfzeile Zitat, name: headerquote, widget: string}
+          - {label: Intro Text Titel, name: introtitle, widget: string}
+          - {label: Intro Text Inhalt, name: introtext, widget: string}
+          - {label: Karte 1 Titel, name: card_1_title, widget: string}
+          - {label: Karte 1 Beschreibung, name: card_1_content, widget: string}

@@ -1,0 +1,11 @@
+@import "src/sass/imports";
+
+.card-image {
+	margin-bottom: size(15);
+}
+
+.card-content {
+	.title {
+		margin-bottom: size(10);
+	}
+}

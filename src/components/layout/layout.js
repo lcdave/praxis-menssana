@@ -7,6 +7,8 @@
 
 import React from "react"
 
+import "./_layout.scss"
+
 const Layout = ({ children }) => {
   return (
     <>

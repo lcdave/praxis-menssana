@@ -1,37 +1,22 @@
 import React from "react"
+import "./_header.scss"
 
-import { graphql } from "gatsby"
-
-const Header = (props) => {
-	const data = props.data.allFile.nodes[0].childMarkdownRemark.frontmatter;
-
+const Header = (data) => {
 	return (
 		<header className="mod_header">
-			<div className="header__image">IMAGE</div>
-			<div className="header__title">
-				<h1>{data.headertitle}</h1>
+			<div className="header__image is-hidden-mobile">
+				<img src={data.data.headerimage_l} alt="Header" />
 			</div>
-			<div className="header__quote">
-				<h3>{data.headerquote}</h3>
+			<div className="header__image is-hidden-desktop">
+				<img src={data.data.headerimage_s} alt="Header" />
+			</div>
+			<div className="header__text">
+				<h1 className="header__title">{data.data.headertitle}</h1>
+				<h3 className="header__quote">{data.data.headerquote}</h3>
+				<a className="button is-medium">Termin vereinbaren</a>
 			</div>
 		</header>
 	)
 }
 
-
 export default Header
-
-export const query = graphql`
-    query {
-        allFile(filter: {sourceInstanceName: {eq: "content"} name: {eq: "home"}}) {
-            nodes {
-                childMarkdownRemark {
-                    frontmatter {
-                        headerimage
-                        headertitle
-                        headerquote
-                    }
-                }
-            }
-        }
-    }`

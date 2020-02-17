@@ -1,0 +1,15 @@
+@import "src/sass/imports";
+
+.navbar {
+	font-size: size(18);
+	padding: 0 size(40);
+
+	h1 {
+		font-size: size(17);
+		text-transform: uppercase;
+
+		.first_letter {
+			font-size: size(28);
+		}
+	}
+}

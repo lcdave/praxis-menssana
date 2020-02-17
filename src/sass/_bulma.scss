@@ -1,0 +1,29 @@
+// Bulma overrides
+$button-color: $color-white;
+$button-background-color: $color-tundora;
+$button-border-color: $color-tundora;
+
+$navbar-background-color: $color-white;
+$navbar-item-color: $color-tundora;
+$navbar-height: 4.25rem;
+$navbar-dropdown-arrow: $color-tundora;
+
+$column-gap: 1.5rem;
+
+// Bulma imports
+@import "./node_modules/bulma/sass/utilities/_all.sass";
+@import "./node_modules/bulma/sass/base/_all.sass";
+@import "./node_modules/bulma/sass/elements/button.sass";
+@import "./node_modules/bulma/sass/elements/container.sass";
+@import "./node_modules/bulma/sass/elements/title.sass";
+@import "./node_modules/bulma/sass/form/_all.sass";
+@import "./node_modules/bulma/sass/components/navbar.sass";
+@import "./node_modules/bulma/sass/layout/hero.sass";
+@import "./node_modules/bulma/sass/layout/section.sass";
+@import "./node_modules/bulma/sass/grid/columns";
+
+.button {
+	&.is-medium {
+		font-size: size(19);
+	}
+}
