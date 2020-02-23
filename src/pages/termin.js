@@ -6,45 +6,42 @@ import SEO from "../components/seo"
 import { graphql } from "gatsby"
 
 import Navbar from "../components/navbar/navbar"
-import Text from "../components/text/text"
 import Footer from "../components/footer/footer"
-import Cards from "../components/cards/cards"
+import Text from "../components/text/text"
 
-const IndexPage = (props) => {
+const Termin = (props) => {
 	const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
+	const bodyData = props.data.allFile.edges[0].node.childMarkdownRemark.html
 
-    return (
+	return (
 		<Layout>
 			<SEO title="Home"/>
 			<Navbar />
-			<Header data={data} />
+			<Header data={data} variant="small" />
 			<section className="section">
-				<Text title={data.introtitle} text={data.introtext} />
+				<Text title={data.introtitle} text={bodyData} variant="var_left" />
 			</section>
-			<Cards data={data} />
 			<Footer />
 		</Layout>
 	)
 }
 
-export default IndexPage
+export default Termin
 
 export const query = graphql`
     query {
-        allFile(filter: {sourceInstanceName: {eq: "content"} name: {eq: "home"}}) {
+        allFile(filter: {sourceInstanceName: {eq: "content"} name: {eq: "termin"}}) {
             edges {
                 node {
                     childMarkdownRemark {
                         frontmatter {
-                            headerimage_l
+                            headerimage_lh_l
                             headerimage_s
                             headertitle
-                            headerquote
                             introtitle
-                            introtext
-                            card_1_title
-                            card_1_content
                         }
+                        excerpt
+                        html
                     }
                 }
             }

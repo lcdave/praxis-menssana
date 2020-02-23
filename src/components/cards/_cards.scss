@@ -1,13 +1,6 @@
 @import "src/sass/imports";
-.mod_text {
-	&.var_left {
-		.text__title {
-			text-align: left;
-		}
-	}
-}
 
-.text__title {
+.cards__title {
 	font-size: size(40);
 	text-align: center;
 	margin-bottom: size(15);

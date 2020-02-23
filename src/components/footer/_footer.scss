@@ -3,4 +3,48 @@
 .mod_footer {
 	background: $color-tundora;
 	color: $color-white;
+	padding: 0 0 size(40) 0;
+	margin-top: size(70);
+
+	a {
+		color: $color-white;
+	}
+}
+
+.footer__contact {
+	font-size: size(26);
+	margin-bottom: size(40);
+	text-align: center;
+	background: #607b62;
+	box-sizing: border-box;
+	padding: 0;
+
+	.footer__phone {
+		svg {
+			font-size: 27px;
+			margin-right: size(10);
+			margin-top: size(-5);
+			vertical-align: middle;
+		}
+	}
+
+	.footer__mail {
+		svg {
+			font-size: 35px;
+			vertical-align: middle;
+			margin-top: -5px;
+			margin-right: 10px;
+		}
+	}
+}
+
+.footer__link-title {
+	margin-bottom: size(10);
+	text-transform: uppercase;
+	font-size: size(18);
+}
+
+.footer__link {
+	font-size: size(16);
+	margin-bottom: size(5);
 }

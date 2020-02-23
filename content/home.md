@@ -1,5 +1,6 @@
 ---
 headerimage_l: /assets/headerimage_l.jpg
+headerimage_lh_l: /assets/headerimage_lh_l.jpg
 headerimage_s: /assets/headerimage_s.jpg
 headertitle: Hypnose Praxis Menssana
 headerquote: “Deine Visionen werden klarer, wenn du in dein eigenes Herz hinein schaust. Wer nach aussen schaut , träumt. Wer nach innen schaut, erwacht. - C.G.Jung”
