@@ -36,8 +36,13 @@ a {
 }
 
 .mod_profile {
-	width: 40%;
-	margin-left: 35%;
+	width: 60%;
+	margin: 0 auto;
+
+	@include from($desktop) {
+		width: 40%;
+		margin-left: 35%;
+	}
 }
 
 .column {

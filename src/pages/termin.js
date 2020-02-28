@@ -23,7 +23,7 @@ const Termin = (props) => {
 			<Header data={data} variant="small" />
 			<section className="section">
 				<div className="container">
-					<div className="columns">
+					<div className="columns is-desktop">
 					<div className="column">
 						<Form />
 					</div>

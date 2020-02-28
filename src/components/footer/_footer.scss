@@ -23,13 +23,8 @@
 		font-size: size(26);
 	}
 
-
 	.column {
 		margin-bottom: 0;
-
-		@include from($tablet) {
-			margin-bottom: size(60);
-		}
 	}
 
 	.footer__phone {
@@ -70,7 +65,7 @@
 		margin-bottom: 0;
 	}
 
-	@include from($tablet) {
+	@include from($desktop) {
 		.column {
 			margin-bottom: size(60);
 		}

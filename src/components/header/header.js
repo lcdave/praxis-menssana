@@ -5,18 +5,14 @@ const Header = (data) => {
 	if (data.variant === 'small') {
 		return (
 			<header className="mod_header var_small">
-				<div className="header__image is-hidden-mobile">
-					<div className="header__image-title-container">
+				<div className="header__image">
+					<div className="header__image">
 						<div className="container">
 							<div className="header__image-title">
 								{data.data.headertitle}
 							</div>
 						</div>
 					</div>
-					<img src={data.data.headerimage_lh_l} alt="Header" />
-				</div>
-				<div className="header__image is-hidden-desktop">
-					<img src={data.data.headerimage_s} alt="Header" />
 				</div>
 			</header>
 		)
