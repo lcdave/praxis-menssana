@@ -5,8 +5,7 @@ const Text = (data) => {
 	return (
 		<div className={'mod_text ' + data.variant}>
 			<div className="container">
-				<h2 className="text__title">{data.title}</h2>
-				<div className="text__content" dangerouslySetInnerHTML={{ __html: data.text }} />
+				<div className="text__content" dangerouslySetInnerHTML={{ __html: data.content }} />
 			</div>
 		</div>
 	)

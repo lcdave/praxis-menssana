@@ -7,17 +7,30 @@
 	margin-top: size(70);
 
 	a {
-		color: $color-white;
+		color: $color-white !important;
 	}
 }
 
 .footer__contact {
-	font-size: size(26);
+	font-size: size(22);
 	margin-bottom: size(40);
 	text-align: center;
-	background: #607b62;
+	background: $color-glade;
 	box-sizing: border-box;
 	padding: 0;
+
+	@include from($tablet) {
+		font-size: size(26);
+	}
+
+
+	.column {
+		margin-bottom: 0;
+
+		@include from($tablet) {
+			margin-bottom: size(60);
+		}
+	}
 
 	.footer__phone {
 		svg {
@@ -47,4 +60,19 @@
 .footer__link {
 	font-size: size(16);
 	margin-bottom: size(5);
+}
+
+.footer__sitemap {
+	padding: 0 size(24);
+	text-align: center;
+
+	.column {
+		margin-bottom: 0;
+	}
+
+	@include from($tablet) {
+		.column {
+			margin-bottom: size(60);
+		}
+	}
 }

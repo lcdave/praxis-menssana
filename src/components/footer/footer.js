@@ -11,7 +11,7 @@ const Footer = (data) => {
 		<footer className="mod_footer">
 			<div className="footer__contact">
 				<div className="container">
-					<div className="columns">
+					<div className="columns is-desktop">
 						<div className="column">
 							<h2>Lassen Sie sich persönlich beraten</h2>
 						</div>
@@ -30,7 +30,7 @@ const Footer = (data) => {
 			</div>
 			<div className="footer__sitemap">
 				<div className="container">
-					<div className="columns">
+					<div className="columns is-desktop">
 						<div className="column">
 							<p className="footer__link-title">
 								<a href="https://bulma.io/blog">Home</a>

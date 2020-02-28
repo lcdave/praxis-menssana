@@ -44,6 +44,22 @@ export const query = graphql`
                             introtext
                             card_1_title
                             card_1_content
+                            card_1_link
+                            card_2_title
+                            card_2_content
+                            card_2_link
+                            card_3_title
+                            card_3_content
+                            card_3_link
+                            card_4_title
+                            card_4_content
+                            card_4_link
+                            card_5_title
+                            card_5_content
+                            card_5_link
+                            card_6_title
+                            card_6_content
+                            card_6_link
                         }
                     }
                 }

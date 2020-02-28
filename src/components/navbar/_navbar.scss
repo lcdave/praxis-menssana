@@ -2,7 +2,11 @@
 
 .navbar {
 	font-size: size(18);
-	padding: 0 size(40);
+	padding: 0 20px !important;
+
+	@include from($tablet) {
+		padding: 0 size(40);
+	}
 
 	h1 {
 		font-size: size(17);
@@ -12,4 +16,13 @@
 			font-size: size(28);
 		}
 	}
+
+	a {
+		color: $color-black !important;
+	}
+}
+
+.navbar-dropdown {
+	font-size: 16px !important;
+	border-radius: 0 !important;
 }

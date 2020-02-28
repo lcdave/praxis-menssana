@@ -1,10 +1,13 @@
 ---
 headerimage_lh_l: /assets/headerimage_lh_l.jpg
 headerimage_s: /assets/headerimage_s.jpg
-headertitle: Hypnose Praxis Menssana
+headertitle: Termin vereinbaren
 introtitle: Termine Neuer Abschnitt
 ---
 
-BodyText
+### Termine
+* Montag bis Donnerstag: ab 18:00 Uhr
+* Samstag: 09:00 - 12:00 Uhr oder nach Vereinbarung
 
-Abschnitt 2
+### Preise
+* CHF 120.- pro Sitzung

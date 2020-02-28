@@ -8,9 +8,8 @@ import { graphql } from "gatsby"
 import Navbar from "../components/navbar/navbar"
 import Footer from "../components/footer/footer"
 import Text from "../components/text/text"
-import Quote from "../components/quote/quote"
 
-const Hypnosetherapie = (props) => {
+const Phobien = (props) => {
 	const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
 	const content = props.data.allFile.edges[0].node.childMarkdownRemark.html
 
@@ -20,21 +19,22 @@ const Hypnosetherapie = (props) => {
 			<Navbar />
 			<Header data={data} variant="small" />
 			<section className="section">
-				<Text content={content} variant="var_left" />
-			</section>
-			<section className="section">
-				<Quote content={data.quote} />
+				<div className="container">
+					<div className="column">
+						<Text content={content} variant="var_left" />
+					</div>
+				</div>
 			</section>
 			<Footer />
 		</Layout>
 	)
 }
 
-export default Hypnosetherapie
+export default Phobien
 
 export const query = graphql`
     query {
-        allFile(filter: {sourceInstanceName: {eq: "content"} name: {eq: "hypnosetherapie"}}) {
+        allFile(filter: {sourceInstanceName: {eq: "content"} name: {eq: "phobien"}}) {
             edges {
                 node {
                     childMarkdownRemark {
@@ -42,7 +42,6 @@ export const query = graphql`
                             headerimage_lh_l
                             headerimage_s
                             headertitle
-							quote
                         }
                         html
                     }

@@ -1,0 +1,23 @@
+@import "src/sass/imports";
+
+.mod_quote {
+	position: relative;
+	font-size: size(28);
+	width: 770px;
+	margin: 0 auto size(30) auto;
+	text-align: center;
+
+	&:before {
+		content: "";
+		display: block;
+		position: absolute;
+		height: 1px;
+		width: 100%;
+		background: $color-black;
+		top: 0;
+	}
+}
+
+.quote__content {
+	padding-top: size(20);
+}

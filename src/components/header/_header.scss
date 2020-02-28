@@ -5,10 +5,33 @@
 }
 
 .header__image {
-	img {
-		display: block;
-		width: 100%;
+	position: relative;
+	width: 100%;
+	display: block;
+	background: url("/assets/headerimage.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50%;
+	height: 450px;
+
+	@include from($tablet) {
+		height: 650px;
 	}
+
+}
+
+.header__image-title-container {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.header__image-title {
+	position: absolute;
+	color: $color-white;
+	font-size: size(32);
+	margin-top: size(12);
+	text-transform: uppercase;
 }
 
 .header__title {
@@ -44,7 +67,7 @@
 	text-align: center;
 
 	@include from($tablet) {
-		padding: 0;
+		padding: 0 24px;
 		width: size(768);
 	}
 }

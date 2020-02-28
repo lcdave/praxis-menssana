@@ -1,0 +1,14 @@
+@import "src/sass/imports";
+
+.mod_form {
+	.checkbox {
+		input {
+			margin-right: size(10);
+		}
+	}
+
+	.button {
+		margin-top: size(20);
+		background-color: $color-glade;
+	}
+}

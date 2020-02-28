@@ -6,3 +6,40 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
+p {
+	margin-bottom: size(20);
+}
+
+a {
+	color: $color-glade !important;
+
+	&.button {
+		font-size: 15px;
+		color: $color-white !important;
+
+		@include from($tablet) {
+			font-size: 18px;
+		}
+	}
+}
+
+.section__title {
+	font-size: size(40);
+	text-align: left;
+	margin-bottom: size(10);
+	margin-top: size(30);
+
+	&:first-child {
+		margin-top: 0;
+	}
+}
+
+.mod_profile {
+	width: 40%;
+	margin-left: 35%;
+}
+
+.column {
+	margin-bottom: size(40);
+}

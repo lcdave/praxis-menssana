@@ -5,13 +5,16 @@ import Header from "../components/header/header"
 import SEO from "../components/seo"
 import { graphql } from "gatsby"
 
+import GoogleMapReact from 'google-map-react';
+
 import Navbar from "../components/navbar/navbar"
 import Footer from "../components/footer/footer"
 import Text from "../components/text/text"
+import Form from "../components/form/form"
 
 const Termin = (props) => {
 	const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
-	const bodyData = props.data.allFile.edges[0].node.childMarkdownRemark.html
+	const content = props.data.allFile.edges[0].node.childMarkdownRemark.html
 
 	return (
 		<Layout>
@@ -19,7 +22,23 @@ const Termin = (props) => {
 			<Navbar />
 			<Header data={data} variant="small" />
 			<section className="section">
-				<Text title={data.introtitle} text={bodyData} variant="var_left" />
+				<div className="container">
+					<div className="columns">
+					<div className="column">
+						<Form />
+					</div>
+					<div className="column">
+						<Text content={content} variant="var_left" />
+					</div>
+				</div>
+				</div>
+			</section>
+			<section className="section">
+				<div className="container">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2694.0701322615278!2d7.634326015746407!3d47.52749760143199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791b7ec8e199951%3A0xd4e1bf4dc482e035!2sBaselstrasse%2086%2C%204132%20Muttenz!5e0!3m2!1sde!2sch!4v1582578057317!5m2!1sde!2sch"
+						width="100%" height="450" frameBorder="0" allowFullScreen="" />
+				</div>
 			</section>
 			<Footer />
 		</Layout>
@@ -40,7 +59,6 @@ export const query = graphql`
                             headertitle
                             introtitle
                         }
-                        excerpt
                         html
                     }
                 }

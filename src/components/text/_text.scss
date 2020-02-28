@@ -1,14 +1,44 @@
 @import "src/sass/imports";
 .mod_text {
 	&.var_left {
-		.text__title {
-			text-align: left;
+		.text__content {
+			h2 {
+				text-align: left;
+			}
 		}
 	}
 }
 
-.text__title {
-	font-size: size(40);
-	text-align: center;
-	margin-bottom: size(15);
+.text__content {
+	font-size: 18px;
+
+	h2 {
+		font-size: size(30);
+		text-align: center;
+		margin-bottom: size(10);
+		margin-top: size(30);
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	h3 {
+		font-size: size(24);
+		margin-bottom: size(10);
+		margin-top: size(30);
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	p {
+		margin-bottom: size(20);
+	}
+
+	ul {
+		list-style: circle;
+		padding-left: size(25);
+	}
 }
