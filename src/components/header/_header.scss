@@ -2,13 +2,31 @@
 
 .mod_header {
 	position: relative;
+	margin-bottom: 25px;
+
+	@include from($tablet) {
+		margin-bottom: 50px;
+	}
 
 	&.var_small {
 		.header__image {
-			height: 250px;
+			height: 200px;
+		}
+
+		.header__title {
+			font-size: 38px;
+			margin-bottom: 0;
 
 			@include from($tablet) {
-				height: 250px;
+				font-size: size(46);
+			}
+		}
+
+		.header__text {
+			text-align: left;
+
+			@include from($tablet) {
+				width: 100%;
 			}
 		}
 	}
@@ -18,7 +36,6 @@
 	position: relative;
 	width: 100%;
 	display: block;
-	background: url("/assets/headerimage.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 50%;
@@ -30,21 +47,6 @@
 
 	.container {
 		height: 100%;
-	}
-}
-
-.header__image-title {
-	position: absolute;
-	color: $color-white;
-	font-size: size(32);
-	text-transform: uppercase;
-	margin: 0;
-	top: 50%;
-	transform: translateY(-50%);
-	padding-left: 24px;
-
-	@include from($desktop) {
-		padding-left: 0;
 	}
 }
 

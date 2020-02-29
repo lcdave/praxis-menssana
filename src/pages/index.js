@@ -18,9 +18,6 @@ const IndexPage = (props) => {
 			<SEO title="Home"/>
 			<Navbar />
 			<Header data={data} />
-			<section className="section">
-				<Text title={data.introtitle} text={data.introtext} />
-			</section>
 			<Cards data={data} />
 			<Footer />
 		</Layout>

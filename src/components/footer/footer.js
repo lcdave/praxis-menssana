@@ -40,30 +40,26 @@ const Footer = (data) => {
 							<p className="footer__link-title">
 								<a href="https://bulma.io/blog">Hypnosetherapie</a>
 							</p>
-							<p className="footer__link"><a href="/2019/10/15/light-dark-colors/">Ängste</a></p>
-							<p className="footer__link"><a href="/2019/10/15/light-dark-colors/">Ängste</a></p>
-							<p className="footer__link"><a href="/2019/10/15/light-dark-colors/">Ängste</a></p>
-							<p className="footer__link"><a href="/2019/10/15/light-dark-colors/">Ängste</a></p>
+						</div>
+						<div className="column">
+							<p className="footer__link-title">
+								<a href="https://bulma.io/blog">Anwendungsbereiche</a>
+							</p>
+							<p className="footer__link"><a href="/2019/10/15/light-dark-colors/">Phobien</a></p>
+							<p className="footer__link"><a href="/2019/10/15/light-dark-colors/">Übergewicht</a></p>
+							<p className="footer__link"><a href="/2019/10/15/light-dark-colors/">Schlafstörungen</a></p>
+							<p className="footer__link"><a href="/2019/10/15/light-dark-colors/">Raucherentwöhnung</a></p>
+							<p className="footer__link"><a href="/2019/10/15/light-dark-colors/">Neurodermitis</a></p>
 						</div>
 						<div className="column">
 							<p className="footer__link-title">
 								<a href="https://bulma.io/blog">Termin vereinbaren</a>
 							</p>
-							<p className="footer__link"><a href="/2019/10/15/light-dark-colors/">Ängste</a></p>
-							<p className="footer__link"><a href="/2019/10/15/light-dark-colors/">Ängste</a></p>
-						</div>
-						<div className="column">
-							<p className="footer__link-title">
-								<a href="https://bulma.io/blog">Kosten</a>
-							</p>
-							<p className="footer__link"><a href="/2019/10/15/light-dark-colors/">Ängste</a></p>
 						</div>
 						<div className="column">
 							<p className="footer__link-title">
 								<a href="https://bulma.io/blog">Über mich</a>
 							</p>
-							<p className="footer__link"><a href="/2019/10/15/light-dark-colors/">Ausbildung</a></p>
-							<p className="footer__link"><a href="/2019/10/15/light-dark-colors/">Persönliches</a></p>
 						</div>
 					</div>
 				</div>

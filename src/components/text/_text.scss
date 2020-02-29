@@ -27,10 +27,14 @@
 	h3 {
 		font-size: size(24);
 		margin-bottom: size(10);
-		margin-top: size(30);
+		margin-top: 35px;
 
 		&:first-child {
 			margin-top: 0;
+		}
+
+		@include from($tablet) {
+			margin-top: 30px;
 		}
 	}
 

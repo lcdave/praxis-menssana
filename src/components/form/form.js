@@ -5,7 +5,13 @@ const Form = () => {
 	return (
 		<form className="mod_form">
 			<div className="field">
-				<label className="label">Name</label>
+				<label className="label">Vorname</label>
+				<div className="control">
+					<input className="input" type="text" />
+				</div>
+			</div>
+			<div className="field">
+				<label className="label">Nachname</label>
 				<div className="control">
 					<input className="input" type="text" />
 				</div>
@@ -17,7 +23,7 @@ const Form = () => {
 				</div>
 			</div>
 			<div className="field">
-				<label className="label">Message</label>
+				<label className="label">Ihre Nachricht</label>
 				<div className="control">
 					<textarea className="textarea" />
 				</div>
@@ -26,7 +32,7 @@ const Form = () => {
 				<div className="control">
 					<label className="checkbox">
 						<input type="checkbox" />
-						<span className="checkbox__label"> I agree to the <a href="#">terms and conditions</a></span>
+						<span className="checkbox__label"> Ich habe die <a href="#">Datenschutzerklärung</a> zur Kenntnis genommen und erkläre mich damit einverstanden.</span>
 					</label>
 				</div>
 			</div>

@@ -1,6 +1,5 @@
 ---
-headerimage_lh_l: /assets/headerimage_lh_l.jpg
-headerimage_s: /assets/headerimage_s.jpg
+headerimage: /assets/headerimage.jpg
 headertitle: Hypnosetherapie
 quote: Mein Wunsch ist es, sie auf ihrem Weg hin zu ihren Zielen kompetent, empathisch und unterstützend begleiten zu dürfen.
 ---

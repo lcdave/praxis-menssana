@@ -2,15 +2,15 @@ import React from "react"
 import "./_header.scss"
 
 const Header = (data) => {
+	const backgroundImageUrl= "url('" + data.data.headerimage + "')";
+
 	if (data.variant === 'small') {
 		return (
 			<header className="mod_header var_small">
-				<div className="header__image">
-					<div className="header__image">
+				<div className="header__image" style={{background: backgroundImageUrl}}>
+					<div className="header__text">
 						<div className="container">
-							<div className="header__image-title">
-								{data.data.headertitle}
-							</div>
+							<h1 className="header__title">{data.data.headertitle}</h1>
 						</div>
 					</div>
 				</div>
@@ -19,7 +19,7 @@ const Header = (data) => {
 	} else {
 		return (
 			<header className="mod_header">
-				<div className="header__image" />
+				<div className="header__image" style={{background: backgroundImageUrl}} />
 				<div className="header__text">
 					<h1 className="header__title">{data.data.headertitle}</h1>
 					<h3 className="header__quote">{data.data.headerquote}</h3>

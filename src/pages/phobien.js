@@ -19,11 +19,7 @@ const Phobien = (props) => {
 			<Navbar />
 			<Header data={data} variant="small" />
 			<section className="section">
-				<div className="container">
-					<div className="column">
-						<Text content={content} variant="var_left" />
-					</div>
-				</div>
+				<Text content={content} variant="var_left" />
 			</section>
 			<Footer />
 		</Layout>
@@ -39,8 +35,7 @@ export const query = graphql`
                 node {
                     childMarkdownRemark {
                         frontmatter {
-                            headerimage_lh_l
-                            headerimage_s
+                            headerimage
                             headertitle
                         }
                         html

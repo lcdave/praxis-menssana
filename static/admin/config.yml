@@ -15,8 +15,7 @@ collections:
         name: "home"
         file: "content/home.md"
         fields:
-          - {label: Kopfbild Desktop, name: headerimage_l, widget: image}
-          - {label: Kopfbild Smartphone, name: headerimage_s, widget: image}
+          - {label: Kopfbild, name: headerimage, widget: image}
           - {label: Kopfzeile Titel, name: headertitle, widget: string}
           - {label: Kopfzeile Zitat, name: headerquote, widget: string}
           - {label: Intro Text Titel, name: introtitle, widget: string}
@@ -28,29 +27,32 @@ collections:
         name: "hypnosetherapie"
         file: "content/hypnosetherapie.md"
         fields:
-          - {label: Kopfbild Desktop, name: headerimage_lh_l, widget: image}
-          - {label: Kopfbild Smartphone, name: headerimage_s, widget: image}
+          - {label: Kopfbild, name: headerimage, widget: image}
           - {label: Kopfzeile Titel, name: headertitle, widget: string}
           - {label: Zitat, name: quote, widget: string}
       - label: "Phobien"
         name: "phobien"
         file: "content/phobien.md"
         fields:
-          - {label: Kopfbild Desktop, name: headerimage_lh_l, widget: image}
-          - {label: Kopfbild Smartphone, name: headerimage_s, widget: image}
+          - {label: Kopfbild, name: headerimage, widget: image}
           - {label: Kopfzeile Titel, name: headertitle, widget: string}
       - label: "Termin vereinbaren"
-        name: "termin"
+        name: "terminPage"
         file: "content/termin.md"
         fields:
-          - {label: Kopfbild Desktop, name: headerimage_lh_l, widget: image}
-          - {label: Kopfbild Smartphone, name: headerimage_s, widget: image}
+          - {label: Kopfbild, name: headerimage, widget: image}
           - {label: Kopfzeile Titel, name: headertitle, widget: string}
+        collections:
+          - name: "text"
+            label: "Text"
+            folder: "content/termin/"
+            create: true
+            fields:
+              - {label: Inhalt, name: body, widget: markdown}
       - label: "Über mich"
         name: "uebermich"
         file: "content/uebermich.md"
         fields:
-          - {label: Kopfbild Desktop, name: headerimage_lh_l, widget: image}
-          - {label: Kopfbild Smartphone, name: headerimage_s, widget: image}
+          - {label: Kopfbild, name: headerimage, widget: image}
           - {label: Kopfzeile Titel, name: headertitle, widget: string}
           - {label: Profil Bild, name: profile_img, widget: image}

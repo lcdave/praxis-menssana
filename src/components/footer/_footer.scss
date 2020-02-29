@@ -66,6 +66,8 @@
 	}
 
 	@include from($desktop) {
+		text-align: left;
+
 		.column {
 			margin-bottom: size(60);
 		}

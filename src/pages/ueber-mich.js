@@ -46,8 +46,7 @@ export const query = graphql`
                 node {
                     childMarkdownRemark {
                         frontmatter {
-                            headerimage_lh_l
-                            headerimage_s
+                            headerimage
                             headertitle
                             profile_img
                         }

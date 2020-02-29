@@ -24,6 +24,18 @@ a {
 	}
 }
 
+.section {
+	padding: 16px 24px;
+
+	@include from($tablet) {
+		padding: 32px 24px !important;
+	}
+
+	@include from($desktop) {
+		padding: 50px 24px !important;
+	}
+}
+
 .section__title {
 	font-size: size(40);
 	text-align: left;
@@ -46,5 +58,5 @@ a {
 }
 
 .column {
-	margin-bottom: size(40);
+	margin-bottom: 0;
 }

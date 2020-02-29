@@ -1,5 +1,13 @@
 @import "src/sass/imports";
 
+.card {
+	margin-bottom: 30px;
+
+	@include from($tablet) {
+		margin-bottom: 50px;
+	}
+}
+
 .card-image {
 	margin-bottom: size(15);
 }

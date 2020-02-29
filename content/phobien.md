@@ -1,6 +1,5 @@
 ---
-headerimage_lh_l: /assets/headerimage_lh_l.jpg
-headerimage_s: /assets/headerimage_s.jpg
+headerimage: /assets/headerimage.jpg
 headertitle: Phobien
 ---
 
