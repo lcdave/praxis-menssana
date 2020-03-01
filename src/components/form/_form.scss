@@ -9,6 +9,11 @@
 
 	.button {
 		margin-top: size(20);
-		background-color: $color-glade;
+
+		&:hover {
+			background: $color-glade;
+			border-color: transparent;
+			color: $color-white;
+		}
 	}
 }

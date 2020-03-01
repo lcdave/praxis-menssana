@@ -1,10 +1,9 @@
 @import "src/sass/imports";
 
 .mod_footer {
-	background: $color-tundora;
+	background: $color-heavy-metal;
 	color: $color-white;
-	padding: 0 0 size(40) 0;
-	margin-top: size(70);
+	margin-top: 70px;
 
 	a {
 		color: $color-white !important;
@@ -50,16 +49,25 @@
 	margin-bottom: size(10);
 	text-transform: uppercase;
 	font-size: size(18);
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 .footer__link {
 	font-size: size(16);
 	margin-bottom: size(5);
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 .footer__sitemap {
-	padding: 0 size(24);
 	text-align: center;
+	padding: 0 24px;
+	margin-bottom: 30px;
 
 	.column {
 		margin-bottom: 0;
@@ -67,9 +75,52 @@
 
 	@include from($desktop) {
 		text-align: left;
+	}
+}
 
-		.column {
-			margin-bottom: size(60);
+.footer__service-navigation {
+	background: $color-heavy-metal-dark;
+
+	.container {
+		padding: 0 20px;
+
+		@include from($desktop) {
+			padding: 0;
+		}
+	}
+
+	.service-navigation__link {
+		display: inline-block;
+		padding-top: 5px;
+		margin-right: 20px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	.service-navigation__social {
+		font-size: 22px;
+		padding-top: 4px;
+		cursor: pointer;
+		float: right;
+
+		@include from($desktop) {
+			float: none;
+		}
+
+		&:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		svg {
+			margin-right: 15px;
+
+			&:hover {
+				fill: $color-amulet;
+			}
 		}
 	}
 }

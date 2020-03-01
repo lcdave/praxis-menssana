@@ -38,7 +38,7 @@ const Form = () => {
 			</div>
 			<div className="field">
 				<div className="control">
-					<button className="button is-link">Senden</button>
+					<button className="button">Senden</button>
 				</div>
 			</div>
 		</form>

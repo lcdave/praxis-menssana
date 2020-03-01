@@ -2,6 +2,8 @@ import React from "react"
 
 import { FaPhone } from "react-icons/fa"
 import { GoMail } from "react-icons/go"
+import { FaInstagram } from "react-icons/fa"
+import { FaFacebook } from "react-icons/fa"
 
 
 import "./_footer.scss"
@@ -60,6 +62,22 @@ const Footer = (data) => {
 							<p className="footer__link-title">
 								<a href="https://bulma.io/blog">Über mich</a>
 							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div className="footer__service-navigation">
+				<div className="container">
+					<div className="columns is-mobile">
+						<div className="column is-four-fifths-desktop">
+							<a className="service-navigation__link">Datenschutz</a>
+							<a className="service-navigation__link">Impressum</a>
+						</div>
+						<div className="column">
+							<div className="service-navigation__social">
+								<FaFacebook />
+								<FaInstagram />
+							</div>
 						</div>
 					</div>
 				</div>

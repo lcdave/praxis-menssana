@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 import "./_card.scss"
 
 const Card = (data) => {
-	console.log(data.link);
 	return (
 			<div className="card">
 				<Link className="card__link" to={data.link}>

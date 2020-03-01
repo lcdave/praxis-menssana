@@ -1,24 +1,28 @@
-import React from "react"
+import React, { useState } from 'react';
 import { Link } from "gatsby"
 
 import "./_navbar.scss"
 
 const Navbar = () => {
+	const [mainnavState, setMainnavState] = useState('');
+	const mainnavClass = "navbar-menu " + mainnavState;
+	const mainnavBurgerClass = "navbar-burger burger " + mainnavState;
+
 	return (
 		<nav className="navbar" role="navigation" aria-label="main navigation">
 			<div className="navbar-brand">
 				<a className="navbar-item" href="/">
 					<h1><span className="first_letter">M</span>enssana</h1>
 				</a>
-				<a role="button" className="navbar-burger burger" aria-label="menu" aria-expanded="false"
-				   data-target="mainnav">
+				<a role="button" id="navbarBurger" className={mainnavBurgerClass} aria-label="menu" aria-expanded="false"
+				   data-target="mainnav" onClick={ () => {onNavBarBurgerClick()} }>
 					<span aria-hidden="true"></span>
 					<span aria-hidden="true"></span>
 					<span aria-hidden="true"></span>
 				</a>
 			</div>
 
-			<div id="mainnav" className="navbar-menu">
+			<div id="mainnav" className={mainnavClass}>
 				<div className="navbar-end">
 					<Link to="/" className="navbar-item">Home</Link>
 					<Link to="/hypnosetherapie" className="navbar-item">Hypnosetherapie</Link>
@@ -38,6 +42,15 @@ const Navbar = () => {
 			</div>
 		</nav>
 	)
+
+	function onNavBarBurgerClick () {
+		console.log(mainnavClass);
+		if (mainnavState === 'is-active') {
+			setMainnavState('')
+		} else {
+			setMainnavState('is-active')
+		}
+	}
 }
 
 export default Navbar
