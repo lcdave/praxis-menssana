@@ -9,7 +9,7 @@ const Card = (data) => {
 				<Link className="card__link" to={data.link}>
 				<div className="card-image">
 					<figure className="image is-4by3">
-						<img src={data.image} alt="Place" />
+						<img src={data.image} alt={data.imageAlt} />
 					</figure>
 				</div>
 				</Link>

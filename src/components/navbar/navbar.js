@@ -24,7 +24,7 @@ const Navbar = () => {
 
 			<div id="mainnav" className={mainnavClass}>
 				<div className="navbar-end">
-					<Link to="/" className="navbar-item">Home</Link>
+					<Link to="/" className="navbar-item">Startseite</Link>
 					<Link to="/hypnosetherapie" className="navbar-item">Hypnosetherapie</Link>
 					<div className="navbar-item has-dropdown is-hoverable">
 						<a className="navbar-link">Anwendungsbereiche</a>

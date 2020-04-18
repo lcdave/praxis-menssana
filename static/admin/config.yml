@@ -15,6 +15,9 @@ collections:
         name: "home"
         file: "content/home.md"
         fields:
+          - - {label: Seo Titel, name: seoTitle, widget: string}
+              - {label: Seo Beschreibung, name: seoDescription, widget: string}
+              - {label: Seo Stichwörter, name: seoKeywords, widget: string}
           - {label: Kopfbild, name: headerimage, widget: image}
           - {label: Kopfzeile Titel, name: headertitle, widget: string}
           - {label: Kopfzeile Zitat, name: headerquote, widget: string}
@@ -29,6 +32,7 @@ collections:
         fields:
           - {label: Seo Titel, name: seoTitle, widget: string}
           - {label: Seo Beschreibung, name: seoDescription, widget: string}
+          - {label: Seo Stichwörter, name: seoKeywords, widget: string}
           - {label: Kopfbild, name: headerimage, widget: image}
           - {label: Kopfzeile Titel, name: headertitle, widget: string}
           - {label: Zitat, name: quote, widget: string}
@@ -36,12 +40,18 @@ collections:
         name: "phobien"
         file: "content/aengste-phobien.md"
         fields:
+          - {label: Seo Titel, name: seoTitle, widget: string}
+          - {label: Seo Beschreibung, name: seoDescription, widget: string}
+          - {label: Seo Stichwörter, name: seoKeywords, widget: string}
           - {label: Kopfbild, name: headerimage, widget: image}
           - {label: Kopfzeile Titel, name: headertitle, widget: string}
       - label: "Termin vereinbaren"
         name: "terminPage"
         file: "content/termin.md"
         fields:
+          - {label: Seo Titel, name: seoTitle, widget: string}
+          - {label: Seo Beschreibung, name: seoDescription, widget: string}
+          - {label: Seo Stichwörter, name: seoKeywords, widget: string}
           - {label: Kopfbild, name: headerimage, widget: image}
           - {label: Kopfzeile Titel, name: headertitle, widget: string}
         collections:
@@ -55,6 +65,9 @@ collections:
         name: "uebermich"
         file: "content/uebermich.md"
         fields:
+          - {label: Seo Titel, name: seoTitle, widget: string}
+          - {label: Seo Beschreibung, name: seoDescription, widget: string}
+          - {label: Seo Stichwörter, name: seoKeywords, widget: string}
           - {label: Kopfbild, name: headerimage, widget: image}
           - {label: Kopfzeile Titel, name: headertitle, widget: string}
           - {label: Profil Bild, name: profile_img, widget: image}

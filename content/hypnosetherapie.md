@@ -1,6 +1,7 @@
 ---
-seoTitle: Test
-seoDescription: Test Desc
+seoTitle: Placeholder
+seoDescription: Placeholder
+seoKeywords: Placeholder
 headerimage: /assets/headerimage.jpg
 headertitle: Hypnosetherapie
 quote: Mein Wunsch ist es, sie auf ihrem Weg hin zu ihren Zielen kompetent, empathisch und unterstützend begleiten zu dürfen.

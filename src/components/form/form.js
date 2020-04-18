@@ -3,7 +3,7 @@ import "./_form.scss"
 
 const Form = () => {
 	return (
-		<form id="contact_form" className="mod_form" method="post" netlify-honeypot="bot-field" data-netlify="true">
+		<form id="contact_form" className="mod_form" name="contact_form" method="post" netlify-honeypot="bot-field" data-netlify="true">
 			<h2>Termin vereinbaren / Kontaktieren Sie mich</h2>
 			<input type="hidden" name="bot-field" />
 			<div className="field">

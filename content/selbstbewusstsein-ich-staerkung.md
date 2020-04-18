@@ -1,4 +1,7 @@
 ---
+seoTitle: Placeholder
+seoDescription: Placeholder
+seoKeywords: Placeholder
 headerimage: /assets/headerimage.jpg
 headertitle: Selbstbewusstsein / Ich-Stärkung
 ---

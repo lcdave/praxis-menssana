@@ -1,4 +1,7 @@
 ---
+seoTitle: Placeholder
+seoDescription: Placeholder
+seoKeywords: Placeholder
 headerimage: /assets/headerimage.jpg
 headertitle: Über mich
 profile_img: /assets/profile.jpg

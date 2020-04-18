@@ -15,7 +15,7 @@ const AengstePhobien = (props) => {
 
 	return (
 		<Layout>
-			<SEO title="Home"/>
+			<SEO title={data.seoTitle} description={data.seoDescription} keywords={data.seoKeywords} />
 			<Navbar />
 			<Header data={data} variant="small" />
 			<section className="section">
@@ -35,6 +35,9 @@ export const query = graphql`
                 node {
                     childMarkdownRemark {
                         frontmatter {
+                            seoTitle
+                            seoDescription
+                            seoKeywords
                             headerimage
                             headertitle
                         }

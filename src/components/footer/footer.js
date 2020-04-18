@@ -38,7 +38,7 @@ const Footer = (data) => {
 					<div className="columns is-desktop">
 						<div className="column">
 							<p className="footer__link-title">
-								<Link to="/">Home</Link>
+								<Link to="/">Startseite</Link>
 							</p>
 						</div>
 						<div className="column">
@@ -91,8 +91,12 @@ const Footer = (data) => {
 						</div>
 						<div className="column">
 							<div className="service-navigation__social">
-								<FaFacebook/>
-								<FaInstagram/>
+								<a href="https://www.facebook.com/Hypnosepraxis-Menssana-105571791009303/" target="_blank">
+									<FaFacebook/>
+								</a>
+								<a href="https://www.instagram.com/hypnosepraxis_menssana/" target="_blank">
+									<FaInstagram/>
+								</a>
 							</div>
 						</div>
 					</div>

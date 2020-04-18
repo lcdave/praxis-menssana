@@ -14,7 +14,7 @@ const IndexPage = (props) => {
 	const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
     return (
 		<Layout>
-			<SEO title="Home"/>
+			<SEO title={data.seoTitle} description={data.seoDescription} keywords={data.seoKeywords} />
 			<Navbar />
 			<Header data={data} />
 			<Cards data={data} />
@@ -33,6 +33,9 @@ export const query = graphql`
                 node {
                     childMarkdownRemark {
                         frontmatter {
+                            seoTitle
+                            seoDescription
+                            seoKeywords
                             headerimage
                             headertitle
                             headerquote
@@ -40,26 +43,32 @@ export const query = graphql`
                             introtext
                             card_1_title
                             card_1_image
+                            card_1_imageAlt
                             card_1_content
                             card_1_link
                             card_2_title
                             card_2_image
+                            card_2_imageAlt
                             card_2_content
                             card_2_link
                             card_3_title
                             card_3_image
+                            card_3_imageAlt
                             card_3_content
                             card_3_link
                             card_4_title
                             card_4_image
+                            card_4_imageAlt
                             card_4_content
                             card_4_link
                             card_5_title
                             card_5_image
+                            card_5_imageAlt
                             card_5_content
                             card_5_link
                             card_6_title
                             card_6_image
+                            card_6_imageAlt
                             card_6_content
                             card_6_link
                         }

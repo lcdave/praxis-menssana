@@ -16,7 +16,7 @@ const Hypnosetherapie = (props) => {
 
 	return (
 		<Layout>
-			<SEO title={data.seoTitle} description={data.seoDescription} />
+			<SEO title={data.seoTitle} description={data.seoDescription} keywords={data.seoKeywords} />
 			<Navbar />
 			<Header data={data} variant="small" />
 			<section className="section">
@@ -41,6 +41,7 @@ export const query = graphql`
                         frontmatter {
 							seoTitle
 							seoDescription
+							seoKeywords
                             headerimage
                             headertitle
 							quote

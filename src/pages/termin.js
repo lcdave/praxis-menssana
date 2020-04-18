@@ -12,13 +12,13 @@ import Footer from "../components/footer/footer"
 import Form from "../components/form/form"
 
 const Termin = (props) => {
-	const dataMain = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
+	const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
 
 	return (
 		<Layout>
-			<SEO title="Home"/>
+			<SEO title={data.seoTitle} description={data.seoDescription} keywords={data.seoKeywords} />
 			<Navbar />
-			<Header data={dataMain} variant="small" />
+			<Header data={data} variant="small" />
 
 			<section className="section">
 				<div className="container">
@@ -84,6 +84,9 @@ export const query = graphql`
                 node {
                     childMarkdownRemark {
                         frontmatter {
+                            seoTitle
+                            seoDescription
+                            seoKeywords
                             headerimage
                             headertitle
                             introtitle

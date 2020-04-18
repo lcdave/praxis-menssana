@@ -15,7 +15,7 @@ const UeberMich = (props) => {
 
 	return (
 		<Layout>
-			<SEO title="Home"/>
+			<SEO title={data.seoTitle} description={data.seoDescription} keywords={data.seoKeywords} />
 			<Navbar />
 			<Header data={data} variant="small" />
 			<section className="section">
@@ -26,7 +26,7 @@ const UeberMich = (props) => {
 						</div>
 						<div className="column">
 							<div className="mod_profile">
-								<img src={data.profile_img} alt="Header" />
+								<img src={data.profile_img} alt="Profilbild, Yvonne Amtmann, Hypnosetherapeutin" />
 							</div>
 						</div>
 					</div>
@@ -46,6 +46,9 @@ export const query = graphql`
                 node {
                     childMarkdownRemark {
                         frontmatter {
+                            seoTitle
+                            seoDescription
+                            seoKeywords
                             headerimage
                             headertitle
                             profile_img
