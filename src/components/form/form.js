@@ -35,7 +35,7 @@ class ContactForm extends React.Component {
 	render() {
 		const { name, lastname, email, message } = this.state
 		return (
-			<form className="mod_form" onSubmit={this.handleSubmit}>
+			<form className="mod_form" name="contact" method="POST" data-netlify="true" onSubmit={this.handleSubmit}>
 				<h2>Termin vereinbaren / Kontaktieren Sie mich</h2>
 
 				<div className="field">
