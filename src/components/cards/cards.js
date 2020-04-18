@@ -5,7 +5,7 @@ import Card from "../card/card"
 
 const Cards = (data) => {
 	return (
-		<div className="mod_cards">
+		<div className="mod_cards" id="cards">
 			<section className="section">
 				<div className="container">
 					<h2 className="cards__title">Anwendungsbereiche</h2>

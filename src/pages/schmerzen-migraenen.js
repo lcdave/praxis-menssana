@@ -8,6 +8,7 @@ import { graphql } from "gatsby"
 import Navbar from "../components/navbar/navbar"
 import Footer from "../components/footer/footer"
 import Text from "../components/text/text"
+import BackButton from "../components/backbutton/backbutton"
 
 const SchmerzenMigraenen = (props) => {
 	const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
@@ -20,6 +21,7 @@ const SchmerzenMigraenen = (props) => {
 			<Header data={data} variant="small" />
 			<section className="section">
 				<Text content={content} variant="var_left" />
+				<BackButton />
 			</section>
 			<Footer />
 		</Layout>

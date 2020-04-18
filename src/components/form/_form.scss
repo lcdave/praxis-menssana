@@ -1,6 +1,14 @@
 @import "src/sass/imports";
 
 .mod_form {
+	&.is-hidden {
+		display: none;
+	}
+
+	&.is-visible {
+		display: block;
+	}
+
 	.checkbox {
 		input {
 			margin-right: size(10);

@@ -24,7 +24,7 @@ const Header = (data) => {
 				<div className="header__text">
 					<h1 className="header__title">{data.data.headertitle}</h1>
 					<h3 className="header__quote">{data.data.headerquote}</h3>
-					<Link to="/termin" className="button is-medium">Termin vereinbaren</Link>
+					<Link to="/termin" className="button is-medium is-light">Termin vereinbaren</Link>
 				</div>
 			</header>
 		)

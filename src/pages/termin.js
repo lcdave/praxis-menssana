@@ -4,9 +4,6 @@ import Layout from "../components/layout/layout"
 import Header from "../components/header/header"
 import SEO from "../components/seo"
 import { graphql } from "gatsby"
-
-import GoogleMapReact from 'google-map-react';
-
 import Navbar from "../components/navbar/navbar"
 import Footer from "../components/footer/footer"
 import ContactForm from "../components/form/form"
