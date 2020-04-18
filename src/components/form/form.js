@@ -1,50 +1,89 @@
 import React from "react"
 import "./_form.scss"
 
-const Form = () => {
-	return (
-		<form id="contact_form" className="mod_form" name="contact_form" method="post" netlify-honeypot="bot-field" data-netlify="true">
-			<h2>Termin vereinbaren / Kontaktieren Sie mich</h2>
-			<input type="hidden" name="bot-field" />
-			<div className="field">
-				<label className="label">Vorname</label>
-				<div className="control">
-					<input className="input" type="text" />
-				</div>
-			</div>
-			<div className="field">
-				<label className="label">Nachname</label>
-				<div className="control">
-					<input className="input" type="text" />
-				</div>
-			</div>
-			<div className="field">
-				<label className="label">E-Mail</label>
-				<div className="control">
-					<input className="input" type="email" required="required" />
-				</div>
-			</div>
-			<div className="field">
-				<label className="label">Ihre Nachricht</label>
-				<div className="control">
-					<textarea className="textarea" />
-				</div>
-			</div>
-			<div className="field">
-				<div className="control">
-					<label className="checkbox">
-						<input type="checkbox" />
-						<span className="checkbox__label"> Ich habe die <a href="#">Datenschutzerklärung</a> zur Kenntnis genommen und erkläre mich damit einverstanden.</span>
-					</label>
-				</div>
-			</div>
-			<div className="field">
-				<div className="control">
-					<button className="button">Senden</button>
-				</div>
-			</div>
-		</form>
-	)
+const encode = (data) => {
+	return Object.keys(data)
+		.map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+		.join("&")
 }
 
-export default Form
+class ContactForm extends React.Component {
+	constructor(props) {
+		super(props)
+		this.state = {
+			name: "",
+			lastname: "",
+			email: "",
+			message: ""
+		}
+	}
+
+	handleSubmit = e => {
+		fetch("/", {
+			method: "POST",
+			headers: { "Content-Type": "application/x-www-form-urlencoded" },
+			body: encode({ "form-name": "contact", ...this.state }),
+		})
+			.then(() => alert("Success!"))
+			.catch(error => alert(error))
+
+		e.preventDefault()
+	}
+
+	handleChange = e => this.setState({ [e.target.name]: e.target.value })
+
+	render() {
+		const { name, lastname, email, message } = this.state
+		return (
+			<form className="mod_form" onSubmit={this.handleSubmit}>
+				<h2>Termin vereinbaren / Kontaktieren Sie mich</h2>
+
+				<div className="field">
+					<label className="label" id="name">Vorname
+						<div className="control">
+							<input className="input" type="text" name="name" value={name} onChange={this.handleChange}/>
+						</div>
+					</label>
+				</div>
+				<div className="field">
+					<label className="label" id="lastname">Nachname
+						<div className="control">
+							<input className="input" type="text" name="lastname" value={lastname}
+								   onChange={this.handleChange}/>
+						</div>
+					</label>
+				</div>
+				<div className="field">
+					<label className="label" id="email">E-Mail
+						<div className="control">
+							<input className="input" type="email" required="required" name="email" value={email}
+								   onChange={this.handleChange}/>
+						</div>
+					</label>
+				</div>
+				<div className="field">
+					<label className="label" id="message">Ihre Nachricht
+						<div className="control">
+							<textarea className="textarea" name="message" value={message} onChange={this.handleChange}/>
+						</div>
+					</label>
+				</div>
+				<div className="field">
+					<div className="control">
+						<label className="checkbox">
+							<input type="checkbox"/>
+							<span className="checkbox__label"> Ich habe die <a href="#">Datenschutzerklärung</a> zur Kenntnis genommen und erkläre mich damit einverstanden.</span>
+						</label>
+					</div>
+				</div>
+				<div className="field">
+					<div className="control">
+						<button className="button" type="submit">Senden</button>
+					</div>
+				</div>
+			</form>
+		)
+	}
+}
+
+export default ContactForm

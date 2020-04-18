@@ -9,7 +9,7 @@ import GoogleMapReact from 'google-map-react';
 
 import Navbar from "../components/navbar/navbar"
 import Footer from "../components/footer/footer"
-import Form from "../components/form/form"
+import ContactForm from "../components/form/form"
 
 const Termin = (props) => {
 	const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
@@ -56,7 +56,7 @@ const Termin = (props) => {
 				<div className="container">
 					<div className="columns">
 						<div className="column">
-							<Form />
+							<ContactForm />
 						</div>
 					</div>
 				</div>
