@@ -36,9 +36,9 @@
 	position: relative;
 	width: 100%;
 	display: block;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 50%;
+	background-repeat: no-repeat !important;
+	background-position: 50% !important;
+	background-size: cover !important;
 	height: 450px;
 
 	@include from($tablet) {

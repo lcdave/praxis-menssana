@@ -27,12 +27,14 @@ collections:
         name: "hypnosetherapie"
         file: "content/hypnosetherapie.md"
         fields:
+          - {label: Seo Titel, name: seoTitle, widget: string}
+          - {label: Seo Beschreibung, name: seoDescription, widget: string}
           - {label: Kopfbild, name: headerimage, widget: image}
           - {label: Kopfzeile Titel, name: headertitle, widget: string}
           - {label: Zitat, name: quote, widget: string}
-      - label: "Phobien"
+      - label: "AengstePhobien"
         name: "phobien"
-        file: "content/phobien.md"
+        file: "content/aengste-phobien.md"
         fields:
           - {label: Kopfbild, name: headerimage, widget: image}
           - {label: Kopfzeile Titel, name: headertitle, widget: string}

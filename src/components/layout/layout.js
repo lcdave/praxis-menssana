@@ -6,15 +6,17 @@
  */
 
 import React from "react"
-
+import { CookiesProvider } from "react-cookie"
 import "./_layout.scss"
 
 const Layout = ({ children }) => {
-  return (
-    <>
-      <main>{children}</main>
-    </>
-  )
+	return (
+		<>
+			<CookiesProvider>
+				<main>{children}</main>
+			</CookiesProvider>
+		</>
+	)
 }
 
 export default Layout

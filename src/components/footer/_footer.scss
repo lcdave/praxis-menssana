@@ -53,6 +53,12 @@
 	&:hover {
 		text-decoration: underline;
 	}
+
+	&.var_no-link {
+		&:hover {
+			text-decoration: none;
+		}
+	}
 }
 
 .footer__link {

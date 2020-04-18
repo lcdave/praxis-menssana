@@ -9,14 +9,10 @@ import GoogleMapReact from 'google-map-react';
 
 import Navbar from "../components/navbar/navbar"
 import Footer from "../components/footer/footer"
-import Text from "../components/text/text"
 import Form from "../components/form/form"
 
 const Termin = (props) => {
 	const dataMain = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
-	const dataMainContent = props.data.allFile.edges[0].node.childMarkdownRemark.html
-
-	console.log(query);
 
 	return (
 		<Layout>
@@ -83,7 +79,7 @@ export default Termin
 
 export const query = graphql`
     query {
-        allFile(filter: {sourceInstanceName: {eq: "content"} name: {in: ["termin", "preise"]}}) {
+        allFile(filter: {sourceInstanceName: {eq: "content"} name: {eq: "termin"}}) {
             edges {
                 node {
                     childMarkdownRemark {

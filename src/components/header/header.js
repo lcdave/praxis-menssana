@@ -1,5 +1,6 @@
 import React from "react"
 import "./_header.scss"
+import { Link } from "gatsby"
 
 const Header = (data) => {
 	const backgroundImageUrl= "url('" + data.data.headerimage + "')";
@@ -23,7 +24,7 @@ const Header = (data) => {
 				<div className="header__text">
 					<h1 className="header__title">{data.data.headertitle}</h1>
 					<h3 className="header__quote">{data.data.headerquote}</h3>
-					<a className="button is-medium">Termin vereinbaren</a>
+					<Link to="/termin" className="button is-medium">Termin vereinbaren</Link>
 				</div>
 			</header>
 		)

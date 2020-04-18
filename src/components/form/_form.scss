@@ -7,6 +7,18 @@
 		}
 	}
 
+	h2 {
+		text-align: left;
+		font-size: size(30);
+		margin-bottom: size(20);
+		margin-top: size(30);
+		line-height: 1.25;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
 	.button {
 		margin-top: size(20);
 

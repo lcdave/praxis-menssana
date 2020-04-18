@@ -29,11 +29,12 @@ const Navbar = () => {
 					<div className="navbar-item has-dropdown is-hoverable">
 						<a className="navbar-link">Anwendungsbereiche</a>
 						<div className="navbar-dropdown">
-							<Link to="/phobien" className="navbar-item">Phobien</Link>
-							<Link to="/übergewicht" className="navbar-item">Übergewicht</Link>
-							<Link to="/schlafstörungen" className="navbar-item">Schlafstörungen</Link>
-							<Link to="/raucherentwöhnung" className="navbar-item">Raucherentwöhnung</Link>
-							<Link to="/neurodermitis" className="navbar-item">Neurodermitis</Link>
+							<Link to="/aengste-phobien" className="navbar-item">Ängste / Phobien</Link>
+							<Link to="/gewichtsreduktion" className="navbar-item">Gewichtsreduktion</Link>
+							<Link to="/schlafstoerungen" className="navbar-item">Schlafstörungen</Link>
+							<Link to="/schmerzen-migraenen" className="navbar-item">Schmerzen / Migränen</Link>
+							<Link to="/lernschwierigkeiten" className="navbar-item">Lernschwierigkeiten</Link>
+							<Link to="/selbstbewusstsein-ich-staerkung" className="navbar-item">Selbstbewusstsein / Ich-Stärkung</Link>
 						</div>
 					</div>
 					<Link to="/termin" className="navbar-item">Termin vereinbaren</Link>

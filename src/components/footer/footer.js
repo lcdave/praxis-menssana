@@ -7,6 +7,7 @@ import { FaFacebook } from "react-icons/fa"
 
 
 import "./_footer.scss"
+import { Link } from "gatsby"
 
 const Footer = (data) => {
 	return (
@@ -19,12 +20,14 @@ const Footer = (data) => {
 						</div>
 						<div className="column">
 							<div className="footer__phone">
-								<FaPhone/> <span className="footer__phone-label">+41 (0)61 000 00 00</span>
+								<FaPhone/> <span className="footer__phone-label">+41 (0)79 470 87 87</span>
 							</div>
 						</div>
 						<div className="column">
 							<div className="footer__mail">
-								<GoMail/> <span className="footer__mail-label">E-Mail</span>
+								<Link to="/termin#contact_form">
+									<GoMail/> <span className="footer__mail-label">E-Mail</span>
+								</Link>
 							</div>
 						</div>
 					</div>
@@ -35,32 +38,45 @@ const Footer = (data) => {
 					<div className="columns is-desktop">
 						<div className="column">
 							<p className="footer__link-title">
-								<a href="https://bulma.io/blog">Home</a>
+								<Link to="/">Home</Link>
 							</p>
 						</div>
 						<div className="column">
 							<p className="footer__link-title">
-								<a href="https://bulma.io/blog">Hypnosetherapie</a>
+								<Link to="/hypnosetherapie">Hypnosetherapie</Link>
+							</p>
+						</div>
+						<div className="column">
+							<p className="footer__link-title var_no-link">
+								Anwendungsbereiche
+							</p>
+							<p className="footer__link">
+								<Link to="/aengste-phobien">Ängste / Phobien</Link>
+							</p>
+							<p className="footer__link">
+								<Link to="/gewichtsreduktion">Gewichtsreduktion</Link>
+							</p>
+							<p className="footer__link">
+								<Link to="/schlafstoerungen">Schlafstörungen</Link>
+							</p>
+							<p className="footer__link">
+								<Link to="/schmerzen-migraenen">Schmerzen / Migränen</Link>
+							</p>
+							<p className="footer__link">
+								<Link to="/lernschwierigkeiten">Lernschwierigkeiten</Link>
+							</p>
+							<p className="footer__link">
+								<Link to="/selbstbewusstsein-ich-staerkung">Selbstbewusstsein / Ich-Stärkung</Link>
 							</p>
 						</div>
 						<div className="column">
 							<p className="footer__link-title">
-								<a href="https://bulma.io/blog">Anwendungsbereiche</a>
-							</p>
-							<p className="footer__link"><a href="/2019/10/15/light-dark-colors/">Phobien</a></p>
-							<p className="footer__link"><a href="/2019/10/15/light-dark-colors/">Übergewicht</a></p>
-							<p className="footer__link"><a href="/2019/10/15/light-dark-colors/">Schlafstörungen</a></p>
-							<p className="footer__link"><a href="/2019/10/15/light-dark-colors/">Raucherentwöhnung</a></p>
-							<p className="footer__link"><a href="/2019/10/15/light-dark-colors/">Neurodermitis</a></p>
-						</div>
-						<div className="column">
-							<p className="footer__link-title">
-								<a href="https://bulma.io/blog">Termin vereinbaren</a>
+								<Link to="/termin">Termin vereinbaren</Link>
 							</p>
 						</div>
 						<div className="column">
 							<p className="footer__link-title">
-								<a href="https://bulma.io/blog">Über mich</a>
+								<Link to="/ueber-mich">Über mich</Link>
 							</p>
 						</div>
 					</div>
@@ -70,13 +86,13 @@ const Footer = (data) => {
 				<div className="container">
 					<div className="columns is-mobile">
 						<div className="column is-four-fifths-desktop">
-							<a className="service-navigation__link">Datenschutz</a>
-							<a className="service-navigation__link">Impressum</a>
+							<Link to="/datenschutz" className="service-navigation__link">Datenschutz</Link>
+							<Link to="/impressum" className="service-navigation__link">Impressum</Link>
 						</div>
 						<div className="column">
 							<div className="service-navigation__social">
-								<FaFacebook />
-								<FaInstagram />
+								<FaFacebook/>
+								<FaInstagram/>
 							</div>
 						</div>
 					</div>

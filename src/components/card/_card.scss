@@ -1,7 +1,10 @@
 @import "src/sass/imports";
 
 .card {
+	position: relative;
 	margin-bottom: 30px;
+	padding-bottom: 30px;
+	box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
 
 	@include from($tablet) {
 		margin-bottom: 50px;
@@ -13,11 +16,24 @@
 }
 
 .card-content {
-	.title {
-		margin-bottom: size(10);
+	padding: 0px 25px 35px 25px;
+	color: $color-tundora-alternative;
+
+	.content-title {
+		margin-bottom: 16px;
+		font-size: 16px;
+		font-weight: 700;
+		color: $color-tundora-alternative;
+		text-transform: uppercase;
 	}
 
 	.content {
 		margin-bottom: size(15);
 	}
+}
+
+.card-footer {
+	position: absolute;
+	bottom: 20px;
+	left: 25px;
 }

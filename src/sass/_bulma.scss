@@ -16,6 +16,7 @@ $column-gap: 1.5rem;
 @import "./node_modules/bulma/sass/elements/button.sass";
 @import "./node_modules/bulma/sass/elements/container.sass";
 @import "./node_modules/bulma/sass/elements/title.sass";
+@import "./node_modules/bulma/sass/elements/notification";
 @import "./node_modules/bulma/sass/form/_all.sass";
 @import "./node_modules/bulma/sass/components/navbar.sass";
 @import "./node_modules/bulma/sass/layout/hero.sass";
@@ -25,5 +26,13 @@ $column-gap: 1.5rem;
 .button {
 	&.is-medium {
 		font-size: size(19);
+	}
+	&.is-light {
+		background: $color-alto;
+		color: $color-mineshaft !important;
+
+		&:hover {
+			background: $color-silver;
+		}
 	}
 }
