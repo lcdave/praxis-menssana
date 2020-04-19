@@ -1,7 +1,7 @@
 ---
-seoTitle: Placeholder
-seoDescription: Placeholder
-seoKeywords: Placeholder
+seoTitle: Hypnose Praxis Menssana Startseite 
+seoDescription: Professionelle und empathische Beratung in der Hypnosepraxis Menssana in Muttenz.
+seoKeywords: Hypnosepraxis Menssana, Hypnosepraxis Muttenz, kompetente Beratung, Hypnosetherapie, Beratung, Lebensfreude, Hypnose, Trance, Entspannt sein
 headerimage: /assets/headerimage.jpg
 headertitle: Hypnose Praxis Menssana
 headerquote: “Deine Visionen werden klarer, wenn du in dein eigenes Herz hinein schaust. Wer nach aussen schaut , träumt. Wer nach innen schaut, erwacht. - C.G.Jung”

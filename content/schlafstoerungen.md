@@ -1,7 +1,7 @@
 ---
-seoTitle: Placeholder
-seoDescription: Placeholder
-seoKeywords: Placeholder
+seoTitle: Hilfe bei Ein- und Durchschlafschwierigkeiten
+seoDescription: Durch eine hypnotherapeutische Herangehensweise kann die Schlafqualität verbessert werden
+seoKeywords: Insomnie, erholsamer Schlaf, gesunder Schlaf, Durchschlafen, Durchschlafprobleme, Einschlafprobleme, Wachliegen, Gedankenkarussel, erholsame Nacht, Einschlaflatenz, Wachliegen
 headerimage: /assets/headerimage.jpg
 headertitle: Schlafstörungen
 ---

@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Hypnosepraxis Menssana - Therapie und Beratung in Muttenz`,
-    description: `Professionelle und lebensverändernde Hypnose Therapie in der Hypnosepraxis Menssana in Muttenz.`,
-    keywords: 'Hypnose, Hypnosepraxis, Muttenz, Basel',
+    description: `Professionelle und empathische Beratung in der Hypnosepraxis Menssana in Muttenz.`,
+    keywords: 'Hypnosepraxis Menssana, Hypnosepraxis Muttenz, kompetente Beratung, Hypnosetherapie, Beratung, Lebensfreude, Hypnose, Trance, Entspannt sein',
     author: `Yvonne Amtmann`,
     url: "https://www.hypnosepraxis-menssana.ch", // No trailing slash allowed!
     image: "/images/favicon.png", // Path to your image you placed in the 'static' folder

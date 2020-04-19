@@ -1,7 +1,7 @@
 ---
-seoTitle: Placeholder
-seoDescription: Placeholder
-seoKeywords: Placeholder
+seoTitle: Leben ohne belastende Ängste
+seoDescription: Hypnosetherapie kann helfen, belastende Ängste loszulassen
+seoKeywords: Höhenangst, Phobien, Panikattacken, Sozialphobien, Angststörung, Panikstörungen, Handlungsunfähig, Flugangst, Angstsymptom, Angsttherapie, klaustrophobische Symptome
 headerimage: /assets/headerimage.jpg
 headertitle: Ängste / Phobien
 ---

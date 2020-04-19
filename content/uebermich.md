@@ -1,7 +1,7 @@
 ---
-seoTitle: Placeholder
-seoDescription: Placeholder
-seoKeywords: Placeholder
+seoTitle: Hypnosetherapeutin
+seoDescription: Kompetente, empathische Beratung auf dem Weg hinzu ihren Zielen
+seoKeywords: Diplomierte Hypnosetherapeutin, Hypnosecoach, Beratung, Begleitung Hypnotherapie, Hypnosetherapie in Muttenz, Hypnosetherapeutin in Muttenz, Lebenshilfe, kompetente Beratung
 headerimage: /assets/headerimage.jpg
 headertitle: Über mich
 profile_img: /assets/profile.jpg

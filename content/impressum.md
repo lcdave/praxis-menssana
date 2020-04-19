@@ -1,7 +1,7 @@
 ---
-seoTitle: Placeholder
-seoDescription: Placeholder
-seoKeywords: Placeholder
+seoTitle: Impressum
+seoDescription: Informationen zur Verwaltung, Erstellung und Haftungsausschluss der Webseite
+seoKeywords: Impressum, Developer, Verwaltung, Haftungsausschluss, Links
 headerimage: /assets/headerimage.jpg
 headertitle: Impressum
 

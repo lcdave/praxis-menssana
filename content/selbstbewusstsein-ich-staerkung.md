@@ -1,7 +1,7 @@
 ---
-seoTitle: Placeholder
-seoDescription: Placeholder
-seoKeywords: Placeholder
+seoTitle: Selbstvertrauen stärken durch Hypnose
+seoDescription: Werden Sie selbstbewusst und steigern Sie Ihren Selbstwert
+seoKeywords: Stärkung des Selbstvertrauens, Ich-Stärkung, Selbstbewusst Leben, Selbstbestimmt Leben, Selbstwertschätzung, Selbstliebe, innere Talente entdecken, innerer Selbstwert steigern, grösserer Selbstwert, innere Ressourcen stärken, Selbstzweifel beseitigen, Stark sein, Selbstbewusst auftreten, Nein-Sagen können, positives Selbstbild
 headerimage: /assets/headerimage.jpg
 headertitle: Selbstbewusstsein / Ich-Stärkung
 ---

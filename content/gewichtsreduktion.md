@@ -1,7 +1,7 @@
 ---
-seoTitle: Placeholder
-seoDescription: Placeholder
-seoKeywords: Placeholder
+seoTitle: Hypnosetherapie unterstützt sie im Abnehmprozess
+seoDescription: Mit der Hypnosetherapie überflüssige Kilos verlieren und das Wunschgewicht dauerhaft halten
+seoKeywords: Abnehmen, Übergewicht verlieren, Wunschgewicht, schlank sein, schlanker Körper, Traumfigur, Diät, Essgewohnheiten ändern, nachhaltig abnehmen, dauerhaft schlank, Heisshunger, hypnotisches Magenband
 headerimage: /assets/headerimage.jpg
 headertitle: Gewichtsreduktion
 

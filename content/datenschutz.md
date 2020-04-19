@@ -1,7 +1,7 @@
 ---
-seoTitle: Placeholder
-seoDescription: Placeholder
-seoKeywords: Placeholder
+seoTitle: Datenschutz
+seoDescription: Hinweise zur Datenschutzerklärung. Der Inhalt wurde von swissanwalt.ch erstellt.
+seoKeywords: Datenschutz, DSGVO, Google Analytics, Google Maps, swissanwalt, Hinweise, Cookies
 headerimage: /assets/headerimage.jpg
 headertitle: Impressum
 

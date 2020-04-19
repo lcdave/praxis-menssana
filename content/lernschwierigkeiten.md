@@ -1,7 +1,7 @@
 ---
-seoTitle: Placeholder
-seoDescription: Placeholder
-seoKeywords: Placeholder
+seoTitle: Weniger Stress in der Schule
+seoDescription: Durch Hypnose kann das Gelernte im Anschluss an das Lernen im Gedächtnis besser abgespeichert und dadurch besser abgerufen werden.
+seoKeywords: Schule, Lernen, Prüfungsangst, Blackout, Lernschwierigkeiten, Angst vor der Schule, einfacher Lernen, Prüfungen effektiver vorbereiten können, Hausaufgaben, Merkfähigkeit und Lerngeschwindigkeit erhöhen, Fixierung des Gelernten im Gedächtnis, Lampenfieber
 headerimage: /assets/headerimage.jpg
 headertitle: Lernschwierigkeiten
 ---

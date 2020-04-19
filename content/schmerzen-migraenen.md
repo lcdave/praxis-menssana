@@ -1,7 +1,7 @@
 ---
-seoTitle: Placeholder
-seoDescription: Placeholder
-seoKeywords: Placeholder
+seoTitle: Schmerzfrei Leben
+seoDescription: Mit Hilfe von hypnotischen Interventionen kann der Klient die Botschaft seines Körpers verstehen lernen
+seoKeywords: Psychosomatische Schmerzen, Schmerzpatient, anhaltende Schmerzen, Migräne, Kopfschmerzen, unspezifische Schmerzen, Bauchschmerzen, Rückenschmerzen
 headerimage: /assets/headerimage.jpg
 headertitle: Schmerzen / Migränen
 ---

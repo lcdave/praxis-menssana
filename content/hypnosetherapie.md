@@ -1,7 +1,7 @@
 ---
-seoTitle: Placeholder
-seoDescription: Placeholder
-seoKeywords: Placeholder
+seoTitle: Hypnose als Selbsthilfe
+seoDescription: Hypnose ist kein Wundermittel, kann aber ihr Leben verändern.
+seoKeywords: Milton Erikson, Therapieziel, Suchprozess, fokussierte Aufmerksamkeit, innere Bilder, neue Erkenntnisse, Unterbewusstsein, Unbewusstes, Gewohnheiten und Verhalten ändern
 headerimage: /assets/headerimage.jpg
 headertitle: Hypnosetherapie
 quote: Mein Wunsch ist es, sie auf ihrem Weg hin zu ihren Zielen kompetent, empathisch und unterstützend begleiten zu dürfen.
