@@ -35,7 +35,9 @@ class CookieBanner extends React.Component {
 	}
 
 	componentWillMount() {
+		console.log('did mount');
 		if (Cookies.get('cookiesAccepted')) {
+			console.log('cookie ac');
 			this.hideCookieBanner()
 
 			ReactGA.initialize('UA-163840641-1');
@@ -43,6 +45,7 @@ class CookieBanner extends React.Component {
 		}
 
 		if (Cookies.get('cookiesDeclined')) {
+			console.log('cookie dec');
 			this.hideCookieBanner()
 		}
 	}
