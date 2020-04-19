@@ -34,7 +34,7 @@ class CookieBanner extends React.Component {
 		)
 	}
 
-	UNSAFE_componentWillMount() {
+	componentWillMount() {
 		if (Cookies.get('cookiesAccepted')) {
 			this.hideCookieBanner()
 
