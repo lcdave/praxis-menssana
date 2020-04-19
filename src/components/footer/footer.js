@@ -20,7 +20,7 @@ const Footer = (data) => {
 						</div>
 						<div className="column">
 							<div className="footer__phone">
-								<FaPhone/> <span className="footer__phone-label">+41 (0)79 470 87 87</span>
+								<FaPhone/> <span className="footer__phone-label">+41 (0)79 470 87 77</span>
 							</div>
 						</div>
 						<div className="column">
