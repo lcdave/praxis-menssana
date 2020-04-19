@@ -2,12 +2,12 @@
 
 .mod_cookie-banner {
 	position: fixed;
-	right: 50px;
-	bottom: 50px;
-	width: 450px;
 	background: $color-scorpion;
 	color: $color-white;
 	padding: 30px 30px;
+	width: 100%;
+	right: auto;
+	bottom: 0;
 
 	&.is-visible {
 		display: block;
@@ -15,6 +15,12 @@
 
 	&.is-hidden {
 		display: none;
+	}
+
+	@include from($tablet) {
+		right: 50px;
+		bottom: 50px;
+		width: 450px;
 	}
 }
 

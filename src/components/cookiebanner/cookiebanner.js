@@ -49,10 +49,10 @@ class CookieBanner extends React.Component {
 
 	allowCookies() {
 		Cookies.set('cookiesAccepted', 'true', { expires: 365, path: '/' });
+		this.hideCookieBanner();
+
 		ReactGA.initialize('UA-163840641-1');
 		ReactGA.pageview(window.location.pathname + window.location.search);
-
-		this.hideCookieBanner();
 	}
 
 	declineCookies() {
