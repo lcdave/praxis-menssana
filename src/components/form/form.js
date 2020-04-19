@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import "./_form.scss"
 
 const encode = (data) => {
@@ -46,7 +47,7 @@ class ContactForm extends React.Component {
 				<div className={`mod_form ${this.state.formSendNotificationState}`}>
 					<h2>Vielen Dank! Ihre Nachricht wurde versendet!</h2>
 				</div>
-				<form className={`mod_form ${this.state.formState}`} name="contact" method="POST" data-netlify="true"
+				<form id="contact_form" className={`mod_form ${this.state.formState}`} name="contact" method="POST" data-netlify="true"
 					  onSubmit={this.handleSubmit}>
 					<h2>Termin vereinbaren / Kontaktieren Sie mich</h2>
 
@@ -86,7 +87,7 @@ class ContactForm extends React.Component {
 						<div className="control">
 							<label className="checkbox">
 								<input type="checkbox"/>
-								<span className="checkbox__label"> Ich habe die <a href="#">Datenschutzerklärung</a> zur Kenntnis genommen und erkläre mich damit einverstanden.</span>
+								<span className="checkbox__label"> Ich habe die <Link to="/datenschutz">Datenschutzerklärung</Link> zur Kenntnis genommen und erkläre mich damit einverstanden.</span>
 							</label>
 						</div>
 					</div>

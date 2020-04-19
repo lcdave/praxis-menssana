@@ -22,6 +22,10 @@
 		margin-top: size(30);
 		line-height: 1.25;
 
+		@include from($tablet) {
+			white-space: nowrap;
+		}
+
 		&:first-child {
 			margin-top: 0;
 		}
@@ -35,5 +39,14 @@
 			border-color: transparent;
 			color: $color-white;
 		}
+	}
+}
+
+.form_image {
+	margin-top: 97px;
+	display: none;
+
+	@include from($tablet) {
+		display: block;
 	}
 }
