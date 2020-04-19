@@ -17,3 +17,7 @@ Meine Ausbildung  an der Hypnoseschule Schweiz in Heiden beinhaltete:
 * Medizinisch klinische Hypnose
 * Hypnosetherapie Practitioner LLC 
 * Hypnosetherapie Practitioner Kindgerecht
+
+Nach jahrelanger Tätigkeit in der Gastronomie und der öffentlichen Verwaltung, habe ich meine Faszination zur Hypnose zu meinem Beruf gemacht. Nach Abschluss meiner Ausbildung zur Hypnosetherapeutin an der Hypnoseschule Schweiz in Heiden habe ich im Jahr 2019 meine eigene Praxis in Muttenz eröffnet
+
+Als Hypnosetherapeutin sehe ich meine Aufgabe darin, auf jede Klientin und jeden Klienten empathisch und individuell einzugehen. Ich betrachte meine Kunden als selbstkompetent, was bedeutet, dass sie die Lösung und die Selbstheilungskräfte bereits in sich tragen. Meine Vorgehensweise ist zielgerichtet und lösungsorientiert wobei die Wünsche und Ziele der Klienten stets im Zentrum stehen.
