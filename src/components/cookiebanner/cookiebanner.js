@@ -16,7 +16,7 @@ class CookieBanner extends React.Component {
 	}
 	render() {
 		return (
-			<div className={`mod_cookie-banner ${this.state.cookieBanner}`}>
+			<div key={this.state.cookieBanner} className={`mod_cookie-banner ${this.state.cookieBanner}`}>
 				<div className="cookie-banner-text">
 					Cookies werden zur Benutzerführung und Webanalyse verwendet und helfen dabei, diese Webseite zu
 					optimieren. Wenn Sie der Verwendung von Cookies zustimmen, klicken Sie bitte auf „Akzeptieren“. Weitere
