@@ -7,7 +7,7 @@ class CookieBanner extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			cookieBanner: 'is-visible'
+			cookieBanner: true
 		};
 
 		this.allowCookies = this.allowCookies.bind(this);
@@ -15,29 +15,33 @@ class CookieBanner extends React.Component {
 		this.declineCookies = this.declineCookies.bind(this);
 	}
 	render() {
-		return (
-			<div key={this.state.cookieBanner} className={`mod_cookie-banner ${this.state.cookieBanner}`}>
-				<div className="cookie-banner-text">
-					Cookies werden zur Benutzerführung und Webanalyse verwendet und helfen dabei, diese Webseite zu
-					optimieren. Wenn Sie der Verwendung von Cookies zustimmen, klicken Sie bitte auf „Akzeptieren“. Weitere
-					Informationen finden Sie auf unserer Datenschutzerklärung.
-				</div>
-				<div className="cookie-banner-cta-container">
-					<div onClick={this.allowCookies} className="cookie-banner-cta button is-small is-light">
-						Akzeptieren
+		if (this.state.cookieBanner) {
+			return (
+				<div className="mod_cookie-banner">
+					<div className="cookie-banner-text">
+						Cookies werden zur Benutzerführung und Webanalyse verwendet und helfen dabei, diese Webseite zu
+						optimieren. Wenn Sie der Verwendung von Cookies zustimmen, klicken Sie bitte auf „Akzeptieren“. Weitere
+						Informationen finden Sie auf unserer Datenschutzerklärung.
 					</div>
-					<div onClick={this.declineCookies} className="cookie-banner-cta button is-small is-light">
-						Ablehnen
+					<div className="cookie-banner-cta-container">
+						<div onClick={this.allowCookies} className="cookie-banner-cta button is-small is-light">
+							Akzeptieren
+						</div>
+						<div onClick={this.declineCookies} className="cookie-banner-cta button is-small is-light">
+							Ablehnen
+						</div>
 					</div>
 				</div>
-			</div>
-		)
+			)
+		} else {
+			return (
+				<></>
+			)
+		}
 	}
 
 	componentWillMount() {
-		console.log('did mount');
 		if (Cookies.get('cookiesAccepted')) {
-			console.log('cookie ac');
 			this.hideCookieBanner()
 
 			ReactGA.initialize('UA-163840641-1');
@@ -45,7 +49,6 @@ class CookieBanner extends React.Component {
 		}
 
 		if (Cookies.get('cookiesDeclined')) {
-			console.log('cookie dec');
 			this.hideCookieBanner()
 		}
 	}
@@ -66,7 +69,7 @@ class CookieBanner extends React.Component {
 
 	hideCookieBanner() {
 		this.setState({
-			cookieBanner: 'is-hidden'
+			cookieBanner: false
 		});
 	}
 }
