@@ -88,6 +88,7 @@ const Footer = (data) => {
 						<div className="column is-four-fifths-desktop">
 							<Link to="/datenschutz" className="service-navigation__link">Datenschutz</Link>
 							<Link to="/impressum" className="service-navigation__link">Impressum</Link>
+							<Link to="/relevante-seiten" className="service-navigation__link">Relevante Seiten</Link>
 						</div>
 						<div className="column">
 							<div className="service-navigation__social">
