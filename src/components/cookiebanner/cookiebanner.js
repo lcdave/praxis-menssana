@@ -7,10 +7,11 @@ class CookieBanner extends React.Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			cookieBanner: true
+			cookieBanner: false
 		};
 
 		this.allowCookies = this.allowCookies.bind(this);
+		this.showCookieBanner = this.showCookieBanner.bind(this);
 		this.hideCookieBanner = this.hideCookieBanner.bind(this);
 		this.declineCookies = this.declineCookies.bind(this);
 	}
@@ -41,30 +42,31 @@ class CookieBanner extends React.Component {
 	}
 
 	componentWillMount() {
+		if (!(Cookies.get('cookiesAccepted')) && !(Cookies.get('cookiesDeclined'))) {
+			this.showCookieBanner()
+		}
 		if (Cookies.get('cookiesAccepted')) {
-			this.hideCookieBanner()
-
 			ReactGA.initialize('UA-163840641-1');
 			ReactGA.pageview(window.location.pathname + window.location.search);
-		}
-
-		if (Cookies.get('cookiesDeclined')) {
-			this.hideCookieBanner()
 		}
 	}
 
 	allowCookies() {
-		Cookies.set('cookiesAccepted', 'true', { expires: 365, path: '/' });
 		this.hideCookieBanner();
-
+		Cookies.set('cookiesAccepted', 'true', { expires: 365, path: '/' });
 		ReactGA.initialize('UA-163840641-1');
 		ReactGA.pageview(window.location.pathname + window.location.search);
 	}
 
 	declineCookies() {
-		Cookies.set('cookiesDeclined', 'true', { expires: 7, path: '/' });
-
 		this.hideCookieBanner();
+		Cookies.set('cookiesDeclined', 'true', { expires: 7, path: '/' });
+	}
+
+	showCookieBanner() {
+		this.setState({
+			cookieBanner: true
+		});
 	}
 
 	hideCookieBanner() {
