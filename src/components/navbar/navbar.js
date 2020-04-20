@@ -7,6 +7,7 @@ const Navbar = () => {
 	const [mainnavState, setMainnavState] = useState('');
 	const mainnavClass = "navbar-menu " + mainnavState;
 	const mainnavBurgerClass = "navbar-burger burger " + mainnavState;
+	const [dropdownState, setDropdownState] = useState('');
 
 	return (
 		<nav className="navbar" role="navigation" aria-label="main navigation">
@@ -26,9 +27,9 @@ const Navbar = () => {
 				<div className="navbar-end">
 					<Link to="/" className="navbar-item">Startseite</Link>
 					<Link to="/hypnosetherapie" className="navbar-item">Hypnosetherapie</Link>
-					<div className="navbar-item has-dropdown is-hoverable">
-						<a className="navbar-link">Anwendungsbereiche</a>
-						<div className="navbar-dropdown">
+					<div className={`navbar-item has-dropdown is-hoverable ${dropdownState}`}>
+						<a className="navbar-link" onClick={onHasDropdownClick}>Anwendungsbereiche</a>
+						<div className={`navbar-dropdown ${dropdownState}`}>
 							<Link to="/aengste-phobien" className="navbar-item">Ängste / Phobien</Link>
 							<Link to="/gewichtsreduktion" className="navbar-item">Gewichtsreduktion</Link>
 							<Link to="/schlafstoerungen" className="navbar-item">Schlafstörungen</Link>
@@ -45,11 +46,18 @@ const Navbar = () => {
 	)
 
 	function onNavBarBurgerClick () {
-		console.log(mainnavClass);
 		if (mainnavState === 'is-active') {
 			setMainnavState('')
 		} else {
 			setMainnavState('is-active')
+		}
+	}
+
+	function onHasDropdownClick () {
+		if (dropdownState === 'is-active') {
+			setDropdownState('')
+		} else {
+			setDropdownState('is-active')
 		}
 	}
 }

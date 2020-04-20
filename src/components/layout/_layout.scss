@@ -30,7 +30,7 @@ a {
 }
 
 .section {
-	padding: 16px 24px;
+	padding: 16px 24px !important;
 
 	@include from($tablet) {
 		padding: 32px 24px !important;

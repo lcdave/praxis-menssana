@@ -25,8 +25,33 @@
 .navbar-dropdown {
 	font-size: 16px !important;
 	border-radius: 0 !important;
+	display: none;
+
+	&.is-active {
+		display: block;
+	}
 }
 
 .navbar-menu {
 	box-shadow: none !important;
+}
+
+.navbar-item {
+	&.has-dropdown {
+		.navbar-link {
+			&:after {
+				transition: transform .2s ease-in-out;
+				transform: rotate(-45deg);
+			}
+		}
+	}
+	&.has-dropdown {
+		&.is-active {
+			.navbar-link {
+				&:after {
+					transform: rotate(-225deg);
+				}
+			}
+		}
+	}
 }

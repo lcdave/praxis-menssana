@@ -18,11 +18,15 @@
 
 	&.var_small {
 		.header__image {
-			height: 200px;
+			height: 100px;
+
+			@include from($tablet) {
+				height: 200px;
+			}
 		}
 
 		.header__title {
-			font-size: 38px;
+			font-size: 30px;
 			margin-bottom: 0;
 
 			@include from($tablet) {

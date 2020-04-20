@@ -1,7 +1,11 @@
 @import "src/sass/imports";
 
 .cards__title {
-	font-size: size(40);
+	font-size: 28px;
 	text-align: center;
 	margin-bottom: size(15);
+
+	@include from($tablet) {
+		font-size: size(40);
+	}
 }
