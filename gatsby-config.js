@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Hypnosepraxis Menssana - Therapie und Beratung in Muttenz`,
     description: `Professionelle und empathische Beratung in der Hypnosepraxis Menssana in Muttenz.`,
-    keywords: 'Hypnosepraxis Menssana, Hypnosepraxis Muttenz, kompetente Beratung, Hypnosetherapie, Beratung, Lebensfreude, Hypnose, Trance, Entspannt sein',
+    keywords:
+      "Hypnosepraxis Menssana, Hypnosepraxis Muttenz, kompetente Beratung, Hypnosetherapie, Beratung, Lebensfreude, Hypnose, Trance, Entspannt sein",
     author: `Yvonne Amtmann`,
     url: "https://www.hypnosepraxis-menssana.ch", // No trailing slash allowed!
     image: "/images/favicon.png", // Path to your image you placed in the 'static' folder
@@ -24,7 +25,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/static/assets`,
-        name: 'images',
+        name: "images",
       },
     },
     {
@@ -35,7 +36,7 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-transformer-remark',
+      resolve: "gatsby-transformer-remark",
       options: {
         // CommonMark mode (default: true)
         commonmark: true,
@@ -50,28 +51,16 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#4c724d`,
-        theme_color: `#4c724d`,
-        display: `minimal-ui`,
-        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
-      },
-    },
-    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
           `Barlow`,
           `Salsa`,
-          `source sans pro\:300,400,700` // you can also specify font weights and styles
+          `source sans pro\:300,400,700`, // you can also specify font weights and styles
         ],
-        display: 'swap'
-      }
-    }
+        display: "swap",
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
