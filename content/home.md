@@ -1,5 +1,5 @@
 ---
-seoTitle: Hypnose Praxis Menssana Startseite 
+seoTitle: Hypnose Praxis Menssana Startseite
 seoDescription: Professionelle und empathische Beratung in der Hypnosepraxis Menssana in Muttenz.
 seoKeywords: Hypnosepraxis Menssana, Hypnosepraxis Muttenz, kompetente Beratung, Hypnosetherapie, Beratung, Lebensfreude, Hypnose, Trance, Entspannt sein
 headerimage: /assets/headerimage.jpg
@@ -18,25 +18,25 @@ card_1_link: "/aengste-phobien"
 card_2_title: Schlafstörungen
 card_2_image: /assets/anwendungsbereiche/schlafen.jpg
 card_2_imageAlt: Schlafstörungen Illustration
-card_2_content: Der Begriff Schlafstörung ist ein Sammelbegriff für viele verschiedene Schlafstörungsformen. Eine der häufigsten Schlafstörungen ist die Insomnie. Die Betroffenen leiden unter Ein- / Durchschlafproblemen, haben oft eine kognitive Überaktivität d.h. ihre Denkstruktur ist ungünstig, die Gedanken drehen sich im Kreis und sie können nur schlecht abschalten. 
+card_2_content: Der Begriff Schlafstörung ist ein Sammelbegriff für viele verschiedene Schlafstörungsformen. Eine der häufigsten Schlafstörungen ist die Insomnie. Die Betroffenen leiden unter Ein- / Durchschlafproblemen, haben oft eine kognitive Überaktivität d.h. ihre Denkstruktur ist ungünstig, die Gedanken drehen sich im Kreis und sie können nur schlecht abschalten.
 card_2_link: "/schlafstoerungen"
 
 card_3_title: Gewichtsreduktion
 card_3_image: /assets/anwendungsbereiche/gewicht.jpg
 card_3_imageAlt: Gewcihtsreduktion Illustration
-card_3_content: Viele Menschen sind mit ihrem Gewicht unzufrieden und verspüren den Wunsch abzunehmen. Die schlechten oder falschen Essgewohnheiten zu ändern ist schwierig und jedes Scheitern kann schnell zum Gefühl des Versagens führen. 
+card_3_content: Viele Menschen sind mit ihrem Gewicht unzufrieden und verspüren den Wunsch abzunehmen. Die schlechten oder falschen Essgewohnheiten zu ändern ist schwierig und jedes Scheitern kann schnell zum Gefühl des Versagens führen.
 card_3_link: "/gewichtsreduktion"
 
 card_4_title: Schmerzen / Migräne
-card_4_image: /assets/anwendungsbereiche/schmerz.jpg 
-card_4_imageAlt: Schmerzen und Migränen Illustration 
-card_4_content: Psychosomatische Schmerzen können als vom Körper gesendete Signale verstanden werden, die dem Menschen etwas mitteilen wollen. 
+card_4_image: /assets/anwendungsbereiche/schmerz.jpg
+card_4_imageAlt: Schmerzen und Migränen Illustration
+card_4_content: Psychosomatische Schmerzen können als vom Körper gesendete Signale verstanden werden, die dem Menschen etwas mitteilen wollen.
 card_4_link: "/schmerzen-migraenen"
 
-card_5_title: Lernschwierigkeit 
+card_5_title: Lernschwierigkeit
 card_5_image: /assets/anwendungsbereiche/lernen.jpg
 card_5_imageAlt: Lernschwierigkeit Illustration
-card_5_content: Der Alltag von Kindern und Jugendlichen ist geprägt von Hausaufgaben, Prüfungen, Schule und Lernen. Dadurch stehen sie oft unter starkem Druck und können Stresssymptome oder Versagerängste entwickeln. 
+card_5_content: Der Alltag von Kindern und Jugendlichen ist geprägt von Hausaufgaben, Prüfungen, Schule und Lernen. Dadurch stehen sie oft unter starkem Druck und können Stresssymptome oder Versagerängste entwickeln.
 card_5_link: "/lernschwierigkeiten"
 
 card_6_title: Selbstbewusstsein / Ich-Stärkung

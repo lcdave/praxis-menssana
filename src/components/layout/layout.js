@@ -10,13 +10,13 @@ import { CookiesProvider } from "react-cookie"
 import "./_layout.scss"
 
 const Layout = ({ children }) => {
-	return (
-		<>
-			<CookiesProvider>
-				<main>{children}</main>
-			</CookiesProvider>
-		</>
-	)
+  return (
+    <>
+      <CookiesProvider>
+        <main>{children}</main>
+      </CookiesProvider>
+    </>
+  )
 }
 
 export default Layout

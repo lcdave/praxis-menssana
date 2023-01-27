@@ -17,7 +17,7 @@ const Navbar = () => {
             <span className="first_letter">M</span>enssana
           </h1>
         </a>
-        <a
+        <div
           role="button"
           id="navbarBurger"
           className={mainnavBurgerClass}
@@ -27,11 +27,15 @@ const Navbar = () => {
           onClick={() => {
             onNavBarBurgerClick()
           }}
+          onKeyDown={() => {
+            onNavBarBurgerClick()
+          }}
+          tabIndex={0}
         >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
-        </a>
+        </div>
       </div>
 
       <div id="mainnav" className={mainnavClass}>
@@ -48,9 +52,15 @@ const Navbar = () => {
           <div
             className={`navbar-item has-dropdown is-hoverable ${dropdownState}`}
           >
-            <a className="navbar-link" onClick={onHasDropdownClick}>
+            <div
+              className="navbar-link"
+              onClick={onHasDropdownClick}
+              onKeyDown={onHasDropdownClick}
+              role="button"
+              tabIndex={0}
+            >
               Anwendungsbereiche
-            </a>
+            </div>
             <div className={`navbar-dropdown ${dropdownState}`}>
               <Link to="/aengste-phobien" className="navbar-item">
                 Ängste / Phobien

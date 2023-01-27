@@ -18,8 +18,6 @@ profile_img: /assets/profile.jpg
 - Dipl. Hypnosetherapeutin, Hypnoseschule Schweiz Heiden (2018)
 - Dipl. Astrologin, Sfer Zürich
 
-Meine Hypnoseausbildung ist anerkannt von der Schweizerischen Stiftung für Komplementärmedizin [Asca](http://www.asca.ch/)
-
 [Mitglied Hypnosedachverband Schweiz](https://www.hypnose-dachverband.ch/)
 
 Nach jahrelanger Tätigkeit in der Gastronomie und der öffentlichen Verwaltung, habe ich meine Faszination zur Hypnose zu meinem Beruf gemacht. Nach Abschluss meiner Ausbildung zur Hypnosetherapeutin an der Hypnoseschule Schweiz in Heiden habe ich im Jahr 2019 meine eigene Praxis in Muttenz eröffnet

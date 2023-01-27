@@ -7,6 +7,7 @@ headertitle: Lernschwierigkeiten
 ---
 
 ## Definition
+
 Der Alltag von Kindern und Jugendlichen ist geprägt von Hausaufgaben, Prüfungen, Schule und Lernen. Dadurch stehen sie oft unter starkem Druck und können Stresssymptome oder Versagerängste entwickeln.
 
 Die Ursache für Lernschwierigkeiten kann vielfältig sein und sich auf unterschiedliche Weise zeigen wie z.B. Prüfungsangst, Blockaden, Konzentrationsproblemen, fehlende Motivation oder Versagensängste. Lernschwierigkeiten, Prüfungsangst werden oft durch negative Erfahrungen erworben, sie sind selten angeboren. Kinder sind von Natur aus neugierig und lernfähig, durch negative Erfahrungen kann diese Fähigkeit allerdings verkümmern. Jedes Versagen vergrössert das Problem, Schüler und Schülerinnen trauen sich immer weniger zu, das unbewusste Verhaltensmuster verfestigt sich, eine Negativspirale entsteht.
