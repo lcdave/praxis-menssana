@@ -8,43 +8,52 @@ import { graphql } from "gatsby"
 import Navbar from "../components/navbar/navbar"
 import Footer from "../components/footer/footer"
 import Text from "../components/text/text"
-import BackButton from "../components/backbutton/backbutton"
 
-const RelevanteSeiten = (props) => {
-	const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
-	const content = props.data.allFile.edges[0].node.childMarkdownRemark.html
+const RelevanteSeiten = props => {
+  const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
+  const content = props.data.allFile.edges[0].node.childMarkdownRemark.html
 
-	return (
-		<Layout>
-			<SEO title={data.seoTitle} description={data.seoDescription} keywords={data.seoKeywords} />
-			<Navbar />
-			<Header data={data} variant="small" />
-			<section className="section">
-				<Text content={content} variant="var_left" />
-			</section>
-			<Footer />
-		</Layout>
-	)
+  return (
+    <Layout>
+      <SEO
+        title={data.seoTitle}
+        description={data.seoDescription}
+        keywords={data.seoKeywords}
+      />
+      <Navbar />
+      <Header data={data} variant="small" />
+      <section className="section">
+        <Text content={content} variant="var_left" />
+      </section>
+      <Footer />
+    </Layout>
+  )
 }
 
 export default RelevanteSeiten
 
 export const query = graphql`
-    query {
-        allFile(filter: {sourceInstanceName: {eq: "content"} name: {eq: "relevante-seiten"}}) {
-            edges {
-                node {
-                    childMarkdownRemark {
-                        frontmatter {
-                            seoTitle
-                            seoDescription
-                            seoKeywords
-                            headerimage
-                            headertitle
-                        }
-                        html
-                    }
-                }
+  query {
+    allFile(
+      filter: {
+        sourceInstanceName: { eq: "content" }
+        name: { eq: "relevante-seiten" }
+      }
+    ) {
+      edges {
+        node {
+          childMarkdownRemark {
+            frontmatter {
+              seoTitle
+              seoDescription
+              seoKeywords
+              headerimage
+              headertitle
             }
+            html
+          }
         }
-    }`
+      }
+    }
+  }
+`

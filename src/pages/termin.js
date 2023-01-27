@@ -79,7 +79,7 @@ const Termin = props => {
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2694.0701322615278!2d7.634326015746407!3d47.52749760143199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4791b7ec8e199951%3A0xd4e1bf4dc482e035!2sBaselstrasse%2086%2C%204132%20Muttenz!5e0!3m2!1sde!2sch!4v1582578057317!5m2!1sde!2sch"
             width="100%"
             height="450"
-            frameBorder="0"
+            title="Google Maps"
             allowFullScreen=""
           />
         </div>
