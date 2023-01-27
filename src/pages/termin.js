@@ -8,7 +8,7 @@ import Navbar from "../components/navbar/navbar"
 import Footer from "../components/footer/footer"
 import ContactForm from "../components/form/form"
 
-const Termin = props => {
+const Termin = (props) => {
   const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
 
   return (

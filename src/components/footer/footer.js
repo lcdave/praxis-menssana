@@ -8,7 +8,7 @@ import { FaFacebook } from "react-icons/fa"
 import "./_footer.scss"
 import { Link } from "gatsby"
 
-const Footer = data => {
+const Footer = (data) => {
   return (
     <footer className="mod_footer">
       <div className="footer__contact">

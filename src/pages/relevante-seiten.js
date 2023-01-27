@@ -9,7 +9,7 @@ import Navbar from "../components/navbar/navbar"
 import Footer from "../components/footer/footer"
 import Text from "../components/text/text"
 
-const RelevanteSeiten = props => {
+const RelevanteSeiten = (props) => {
   const data = props.data.allFile.edges[0].node.childMarkdownRemark.frontmatter
   const content = props.data.allFile.edges[0].node.childMarkdownRemark.html
 

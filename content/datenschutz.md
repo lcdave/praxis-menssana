@@ -4,8 +4,8 @@ seoDescription: Hinweise zur Datenschutzerklärung. Der Inhalt wurde von swissan
 seoKeywords: Datenschutz, DSGVO, Google Analytics, Google Maps, swissanwalt, Hinweise, Cookies
 headerimage: /assets/headerimage.jpg
 headertitle: Impressum
-
 ---
+
 <h2>Datenschutzerkl&auml;rung</h2>
 <p>Verantwortliche Stelle im Sinne der Datenschutzgesetze, insbesondere der EU-Datenschutzgrundverordnung (DSGVO), ist:</p>
 <br/>
